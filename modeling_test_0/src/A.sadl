@@ -1,0 +1,6 @@
+component A {
+	contains B as b0;
+	contains C as c0;
+	
+	binds b0.i0 to c0.i0;
+}

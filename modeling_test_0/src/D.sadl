@@ -1,0 +1,13 @@
+component D {
+	contains E as e0;
+	contains E as e1;
+	
+	
+	contains F as f0;
+	
+	
+	
+	binds e0.i0 to f0.i0;
+
+	
+}

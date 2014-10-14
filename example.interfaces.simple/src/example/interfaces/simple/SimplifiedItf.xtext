@@ -1,0 +1,24 @@
+grammar example.interfaces.simple.SimplifiedItf with org.eclipse.xtext.common.Terminals
+
+generate simplifiedItf "http://www.interfaces.example/simple/SimplifiedItf"
+	
+InterfaceDefinition:
+	'interface' name=QualifiedName '{'
+		methods += Method*
+	'}';
+
+Method:
+	returnType = Type
+	name = ID
+	'('
+		typesList += Type (',' typesList += Type)*
+	')' ';'
+;
+
+Type:
+	'int' | 'void' | 'boolean' | 'float'
+;
+
+QualifiedName:
+	ID ('.' ID)*
+;

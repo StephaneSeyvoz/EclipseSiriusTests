@@ -1,0 +1,3 @@
+component F {
+	provides I as i0;
+}

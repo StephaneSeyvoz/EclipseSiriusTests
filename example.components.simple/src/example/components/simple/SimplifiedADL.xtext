@@ -1,0 +1,52 @@
+grammar example.components.simple.SimplifiedADL with org.eclipse.xtext.common.Terminals
+
+generate simplifiedADL "http://www.components.example/simple/SimplifiedADL"
+
+import "http://www.interfaces.example/simple/SimplifiedItf" as SimplifiedItf
+
+Definition:
+	imports += Imports*
+	architecture = Architecture
+;
+	
+Imports:
+	'import' importedNamespace = QualifiedNameWithWildcard ';'
+;
+
+QualifiedNameWithWildcard:
+	QualifiedName '.*'?
+;
+
+Architecture:
+	'component' name=QualifiedName '{'
+		elements += (Component | ProvidedInterface | RequiredInterface | Binding)*
+	'}'
+;
+
+RequiredInterface:
+	'requires' type = [SimplifiedItf::InterfaceDefinition] 'as' name = ID ';'
+;
+
+ProvidedInterface:
+	'provides' type = [SimplifiedItf::InterfaceDefinition] 'as' name = ID ';'
+;
+
+Component:
+	'contains' type = [Architecture | QualifiedName] 'as' name = ID ';'
+;
+
+Binding:
+	'binds'
+	sourceComponent = [Component | ID]
+	'.'
+	sourceInterface = [RequiredInterface | ID]
+	'to'
+	targetComponent = [Component | ID]
+	'.'
+	targetInterface = [ProvidedInterface | ID]
+	';'
+;
+
+QualifiedName:
+	ID ('.' ID)*
+;

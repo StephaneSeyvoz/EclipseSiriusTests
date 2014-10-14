@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:simplifiedADL="http://www.components.example/simple/SimplifiedADL" xmlns:simplifiedItf="http://www.interfaces.example/simple/SimplifiedItf" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_4B94wFOcEeSfRdouOul7KA" selectedViews="_f5G7AFOfEeSf7LHNh9sjAQ" version="8.1.1">
+  <models xmi:type="simplifiedADL:Definition" href="src/A.sadl#/"/>
+  <models xmi:type="simplifiedADL:Definition" href="src/B.sadl#/"/>
+  <models xmi:type="simplifiedADL:Definition" href="src/C.sadl#/"/>
+  <models xmi:type="simplifiedItf:InterfaceDefinition" href="src/I.sitf#/"/>
+  <models xmi:type="simplifiedADL:Definition" href="src/D.sadl#/"/>
+  <models xmi:type="simplifiedADL:Definition" href="src/E.sadl#/"/>
+  <models xmi:type="simplifiedADL:Definition" href="src/F.sadl#/"/>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_f5G7AFOfEeSf7LHNh9sjAQ" initialized="true">
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="___0G0FOhEeSBaN9hBKsDsA" name="C">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_AAElgFOiEeSBaN9hBKsDsA" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_AAElgVOiEeSBaN9hBKsDsA" type="Sirius" element="___0G0FOhEeSBaN9hBKsDsA" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_AANIYFOiEeSBaN9hBKsDsA" type="2002" element="___0G0VOhEeSBaN9hBKsDsA">
+            <children xmi:type="notation:Node" xmi:id="_AAajwFOiEeSBaN9hBKsDsA" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_AAbK0FOiEeSBaN9hBKsDsA" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_AAbK0VOiEeSBaN9hBKsDsA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_AAbK0lOiEeSBaN9hBKsDsA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_f0icsFOiEeSaiKbTXF35NQ" type="3012" element="_f0gngFOiEeSaiKbTXF35NQ">
+              <children xmi:type="notation:Node" xmi:id="_f0jDwFOiEeSaiKbTXF35NQ" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_f0jDwVOiEeSaiKbTXF35NQ" x="31"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_f0jDwlOiEeSaiKbTXF35NQ" type="3017" element="_f0hOkFOiEeSaiKbTXF35NQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_f0jDw1OiEeSaiKbTXF35NQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_f0jq0FOiEeSaiKbTXF35NQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_f0icsVOiEeSaiKbTXF35NQ" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_f0icslOiEeSaiKbTXF35NQ" x="-22" width="30" height="30"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_AANIYVOiEeSBaN9hBKsDsA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AANIYlOiEeSBaN9hBKsDsA" x="325" y="115"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_AAElglOiEeSBaN9hBKsDsA"/>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="___0G0VOhEeSBaN9hBKsDsA" name="C">
+        <target xmi:type="simplifiedADL:Architecture" href="src/C.sadl#//@architecture"/>
+        <semanticElements xmi:type="simplifiedADL:Architecture" href="src/C.sadl#//@architecture"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_f0gngFOiEeSaiKbTXF35NQ" name="i0" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="simplifiedADL:ProvidedInterface" href="src/C.sadl#//@architecture/@elements.0"/>
+          <semanticElements xmi:type="simplifiedADL:ProvidedInterface" href="src/C.sadl#//@architecture/@elements.0"/>
+          <ownedStyle xmi:type="diagram:Lozenge" xmi:id="_f0hOkFOiEeSaiKbTXF35NQ" showIcon="false" labelAlignment="RIGHT">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_f0hOkVOiEeSaiKbTXF35NQ"/>
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@borderedNodeMappings[name='ProvidedInterfaceBNode']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_f0hOklOiEeSaiKbTXF35NQ"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_f0hOk1OiEeSaiKbTXF35NQ" red="246" green="139" blue="139"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@borderedNodeMappings[name='ProvidedInterfaceBNode']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="___0G0lOhEeSBaN9hBKsDsA" labelFormat="bold" showIcon="false">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="___0G01OhEeSBaN9hBKsDsA"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="___0G1FOhEeSBaN9hBKsDsA"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="___0G1VOhEeSBaN9hBKsDsA" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="___0G1lOhEeSBaN9hBKsDsA" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="___0G11OhEeSBaN9hBKsDsA"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer"/>
+      <target xmi:type="simplifiedADL:Definition" href="src/C.sadl#/"/>
+    </ownedRepresentations>
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_C301wFOiEeSBaN9hBKsDsA" name="B">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_C31c0FOiEeSBaN9hBKsDsA" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_C31c0VOiEeSBaN9hBKsDsA" type="Sirius" element="_C301wFOiEeSBaN9hBKsDsA" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_C32D4FOiEeSBaN9hBKsDsA" type="2002" element="_C301wVOiEeSBaN9hBKsDsA">
+            <children xmi:type="notation:Node" xmi:id="_C32D41OiEeSBaN9hBKsDsA" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_C32q8FOiEeSBaN9hBKsDsA" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_C32q8VOiEeSBaN9hBKsDsA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_C32q8lOiEeSBaN9hBKsDsA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_flsvcFOiEeSaiKbTXF35NQ" type="3012" element="_floeAFOiEeSaiKbTXF35NQ">
+              <children xmi:type="notation:Node" xmi:id="_flyPAFOiEeSaiKbTXF35NQ" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_flyPAVOiEeSaiKbTXF35NQ" x="31"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_fl0rQFOiEeSaiKbTXF35NQ" type="3017" element="_floeAVOiEeSaiKbTXF35NQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_fl0rQVOiEeSaiKbTXF35NQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fl0rQlOiEeSaiKbTXF35NQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_flsvcVOiEeSaiKbTXF35NQ" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_flsvclOiEeSaiKbTXF35NQ" x="-22" width="30" height="30"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_C32D4VOiEeSBaN9hBKsDsA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C32D4lOiEeSBaN9hBKsDsA" x="290" y="150"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_C31c0lOiEeSBaN9hBKsDsA"/>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_C301wVOiEeSBaN9hBKsDsA" name="B">
+        <target xmi:type="simplifiedADL:Architecture" href="src/B.sadl#//@architecture"/>
+        <semanticElements xmi:type="simplifiedADL:Architecture" href="src/B.sadl#//@architecture"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_floeAFOiEeSaiKbTXF35NQ" name="i0" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="simplifiedADL:RequiredInterface" href="src/B.sadl#//@architecture/@elements.0"/>
+          <semanticElements xmi:type="simplifiedADL:RequiredInterface" href="src/B.sadl#//@architecture/@elements.0"/>
+          <ownedStyle xmi:type="diagram:Lozenge" xmi:id="_floeAVOiEeSaiKbTXF35NQ" showIcon="false" labelAlignment="LEFT">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_floeAlOiEeSaiKbTXF35NQ"/>
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@borderedNodeMappings[name='RequiredInterfaceBNode']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_floeA1OiEeSaiKbTXF35NQ"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_floeBFOiEeSaiKbTXF35NQ" red="204" green="242" blue="166"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@borderedNodeMappings[name='RequiredInterfaceBNode']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_C301wlOiEeSBaN9hBKsDsA" labelFormat="bold" showIcon="false">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_C301w1OiEeSBaN9hBKsDsA"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_C301xFOiEeSBaN9hBKsDsA"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_C301xVOiEeSBaN9hBKsDsA" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_C301xlOiEeSBaN9hBKsDsA" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_C301x1OiEeSBaN9hBKsDsA"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer"/>
+      <target xmi:type="simplifiedADL:Definition" href="src/B.sadl#/"/>
+    </ownedRepresentations>
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_E64SoFOiEeSBaN9hBKsDsA" name="A">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_E7CDoFOiEeSBaN9hBKsDsA" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_E7CDoVOiEeSBaN9hBKsDsA" type="Sirius" element="_E64SoFOiEeSBaN9hBKsDsA" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_E7CqsFOiEeSBaN9hBKsDsA" type="2002" element="_E64SoVOiEeSBaN9hBKsDsA">
+            <children xmi:type="notation:Node" xmi:id="_E7DRwFOiEeSBaN9hBKsDsA" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_E7DRwVOiEeSBaN9hBKsDsA" type="7001">
+              <children xmi:type="notation:Node" xmi:id="_E7Ef4FOiEeSBaN9hBKsDsA" type="3007" element="_E64Sp1OiEeSBaN9hBKsDsA">
+                <children xmi:type="notation:Node" xmi:id="_E7FuAFOiEeSBaN9hBKsDsA" type="5003">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_E7FuAVOiEeSBaN9hBKsDsA" y="5"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_E7Np0FOiEeSBaN9hBKsDsA" type="3003" element="_E64SrVOiEeSBaN9hBKsDsA">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_E7Np0VOiEeSBaN9hBKsDsA" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E7Np0lOiEeSBaN9hBKsDsA"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_5aZxsFOkEeSdzdrzcH5mKw" type="3001" element="_5Zi2EFOkEeSdzdrzcH5mKw">
+                  <children xmi:type="notation:Node" xmi:id="_5agfYFOkEeSdzdrzcH5mKw" type="5001">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_5agfYVOkEeSdzdrzcH5mKw" x="31"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_5an0IFOkEeSdzdrzcH5mKw" type="3017" element="_5ZjdIFOkEeSdzdrzcH5mKw">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_5an0IVOkEeSdzdrzcH5mKw" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5an0IlOkEeSdzdrzcH5mKw"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_5aZxsVOkEeSdzdrzcH5mKw" fontName="Segoe UI" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5aZxslOkEeSdzdrzcH5mKw" x="-22" width="30" height="30"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_E7Ef4VOiEeSBaN9hBKsDsA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E7Ef4lOiEeSBaN9hBKsDsA" x="160" y="109" width="100" height="30"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_E7HjMFOiEeSBaN9hBKsDsA" type="3007" element="_E64SsVOiEeSBaN9hBKsDsA">
+                <children xmi:type="notation:Node" xmi:id="_E7IKQFOiEeSBaN9hBKsDsA" type="5003">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_E7IKQVOiEeSBaN9hBKsDsA" y="5"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_E7QGEFOiEeSBaN9hBKsDsA" type="3003" element="_E64St1OiEeSBaN9hBKsDsA">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_E7QGEVOiEeSBaN9hBKsDsA" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E7QGElOiEeSBaN9hBKsDsA"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_5aobMFOkEeSdzdrzcH5mKw" type="3001" element="_5Zl5YFOkEeSdzdrzcH5mKw">
+                  <children xmi:type="notation:Node" xmi:id="_5apCQFOkEeSdzdrzcH5mKw" type="5001">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_5apCQVOkEeSdzdrzcH5mKw" x="31"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_5appUFOkEeSdzdrzcH5mKw" type="3017" element="_5Zl5YVOkEeSdzdrzcH5mKw">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_5appUVOkEeSdzdrzcH5mKw" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5appUlOkEeSdzdrzcH5mKw"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_5aobMVOkEeSdzdrzcH5mKw" fontName="Segoe UI" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5aobMlOkEeSdzdrzcH5mKw" x="-22" width="30" height="30"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_E7HjMVOiEeSBaN9hBKsDsA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E7HjMlOiEeSBaN9hBKsDsA" x="435" y="59" width="100" height="30"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_E7DRwlOiEeSBaN9hBKsDsA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_E7DRw1OiEeSBaN9hBKsDsA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_E7CqsVOiEeSBaN9hBKsDsA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E7CqslOiEeSBaN9hBKsDsA" x="5" y="55" width="773" height="213"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_E7CDolOiEeSBaN9hBKsDsA"/>
+          <edges xmi:type="notation:Edge" xmi:id="_5a-ZcFOkEeSdzdrzcH5mKw" type="4001" element="_5aNkcFOkEeSdzdrzcH5mKw" source="_5aZxsFOkEeSdzdrzcH5mKw" target="_5aobMFOkEeSdzdrzcH5mKw">
+            <children xmi:type="notation:Node" xmi:id="_5bAOoFOkEeSdzdrzcH5mKw" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5bAOoVOkEeSdzdrzcH5mKw" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_5bBcwFOkEeSdzdrzcH5mKw" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5bBcwVOkEeSdzdrzcH5mKw" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_5bCD0FOkEeSdzdrzcH5mKw" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5bCD0VOkEeSdzdrzcH5mKw" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_5a-ZcVOkEeSdzdrzcH5mKw" routing="Rectilinear" jumpLinkStatus="Above"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_5a-ZclOkEeSdzdrzcH5mKw" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5a-Zc1OkEeSdzdrzcH5mKw" points="[0, -15, -275, 35]$[0, -50, -275, 0]$[260, -50, -15, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5bNC8FOkEeSdzdrzcH5mKw" id="(0.5,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5bNC8VOkEeSdzdrzcH5mKw" id="(0.5,0.5)"/>
+          </edges>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_E64SoVOiEeSBaN9hBKsDsA" name="A">
+        <target xmi:type="simplifiedADL:Architecture" href="src/A.sadl#//@architecture"/>
+        <semanticElements xmi:type="simplifiedADL:Architecture" href="src/A.sadl#//@architecture"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_E64SolOiEeSBaN9hBKsDsA" labelFormat="bold" showIcon="false">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_E64So1OiEeSBaN9hBKsDsA"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_E64SpFOiEeSBaN9hBKsDsA"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_E64SpVOiEeSBaN9hBKsDsA" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_E64SplOiEeSBaN9hBKsDsA" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']"/>
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_E64Sp1OiEeSBaN9hBKsDsA" name="b0" width="10" height="3" resizeKind="NSEW">
+          <target xmi:type="simplifiedADL:Component" href="src/A.sadl#//@architecture/@elements.0"/>
+          <semanticElements xmi:type="simplifiedADL:Component" href="src/A.sadl#//@architecture/@elements.0"/>
+          <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_5Zi2EFOkEeSdzdrzcH5mKw" name="i0" outgoingEdges="_5aNkcFOkEeSdzdrzcH5mKw" width="3" height="3" resizeKind="NSEW">
+            <target xmi:type="simplifiedADL:RequiredInterface" href="src/B.sadl#//@architecture/@elements.0"/>
+            <semanticElements xmi:type="simplifiedADL:RequiredInterface" href="src/B.sadl#//@architecture/@elements.0"/>
+            <ownedStyle xmi:type="diagram:Lozenge" xmi:id="_5ZjdIFOkEeSdzdrzcH5mKw" showIcon="false" labelAlignment="LEFT">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_5ZjdIVOkEeSdzdrzcH5mKw"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']/@borderedNodeMappings[name='comp_RequiredInterfaceBNode']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_5ZjdIlOkEeSdzdrzcH5mKw"/>
+              <color xmi:type="viewpoint:RGBValues" xmi:id="_5ZjdI1OkEeSdzdrzcH5mKw" red="204" green="242" blue="166"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']/@borderedNodeMappings[name='comp_RequiredInterfaceBNode']"/>
+          </ownedBorderedNodes>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_E64SrVOiEeSBaN9hBKsDsA" showIcon="false" labelPosition="node" width="10" height="3">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_E64SrlOiEeSBaN9hBKsDsA"/>
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_E64Sr1OiEeSBaN9hBKsDsA"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_1WoPsFOjEeSj7fLYwxA_4A" red="194" green="239" blue="255"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_E64SsVOiEeSBaN9hBKsDsA" name="c0" width="10" height="3" resizeKind="NSEW">
+          <target xmi:type="simplifiedADL:Component" href="src/A.sadl#//@architecture/@elements.1"/>
+          <semanticElements xmi:type="simplifiedADL:Component" href="src/A.sadl#//@architecture/@elements.1"/>
+          <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_5Zl5YFOkEeSdzdrzcH5mKw" name="i0" incomingEdges="_5aNkcFOkEeSdzdrzcH5mKw" width="3" height="3" resizeKind="NSEW">
+            <target xmi:type="simplifiedADL:ProvidedInterface" href="src/C.sadl#//@architecture/@elements.0"/>
+            <semanticElements xmi:type="simplifiedADL:ProvidedInterface" href="src/C.sadl#//@architecture/@elements.0"/>
+            <ownedStyle xmi:type="diagram:Lozenge" xmi:id="_5Zl5YVOkEeSdzdrzcH5mKw" showIcon="false" labelAlignment="RIGHT">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_5Zl5YlOkEeSdzdrzcH5mKw"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']/@borderedNodeMappings[name='comp_ProvidedInterfaceBNode']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_5Zl5Y1OkEeSdzdrzcH5mKw"/>
+              <color xmi:type="viewpoint:RGBValues" xmi:id="_5Zl5ZFOkEeSdzdrzcH5mKw" red="246" green="139" blue="139"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']/@borderedNodeMappings[name='comp_ProvidedInterfaceBNode']"/>
+          </ownedBorderedNodes>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_E64St1OiEeSBaN9hBKsDsA" showIcon="false" labelPosition="node" width="10" height="3">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_E64SuFOiEeSBaN9hBKsDsA"/>
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_E64SuVOiEeSBaN9hBKsDsA"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_1Wo2wFOjEeSj7fLYwxA_4A" red="194" green="239" blue="255"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_5aNkcFOkEeSdzdrzcH5mKw" sourceNode="_5Zi2EFOkEeSdzdrzcH5mKw" targetNode="_5Zl5YFOkEeSdzdrzcH5mKw">
+        <target xmi:type="simplifiedADL:Binding" href="src/A.sadl#//@architecture/@elements.2"/>
+        <semanticElements xmi:type="simplifiedADL:Binding" href="src/A.sadl#//@architecture/@elements.2"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_5aPZoFOkEeSdzdrzcH5mKw" size="2" routingStyle="manhattan">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@edgeMappings[name='BindingEdge']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_5aPZoVOkEeSdzdrzcH5mKw" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_5aPZolOkEeSdzdrzcH5mKw">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_5aPZo1OkEeSdzdrzcH5mKw"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@edgeMappings[name='BindingEdge']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_E64Su1OiEeSBaN9hBKsDsA"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer"/>
+      <target xmi:type="simplifiedADL:Definition" href="src/A.sadl#/"/>
+    </ownedRepresentations>
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_teI0AFOkEeSj7fLYwxA_4A" name="E">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_teRW4FOkEeSj7fLYwxA_4A" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_teRW4VOkEeSj7fLYwxA_4A" type="Sirius" element="_teI0AFOkEeSj7fLYwxA_4A" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_teTMEFOkEeSj7fLYwxA_4A" type="2002" element="_teI0AVOkEeSj7fLYwxA_4A">
+            <children xmi:type="notation:Node" xmi:id="_teVoUFOkEeSj7fLYwxA_4A" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_teWPYFOkEeSj7fLYwxA_4A" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_teWPYVOkEeSj7fLYwxA_4A"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_teWPYlOkEeSj7fLYwxA_4A"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_teW2cFOkEeSj7fLYwxA_4A" type="3012" element="_teI0AlOkEeSj7fLYwxA_4A">
+              <children xmi:type="notation:Node" xmi:id="_teXdgFOkEeSj7fLYwxA_4A" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_teXdgVOkEeSj7fLYwxA_4A" x="31"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_DcUB4FOtEeS395bQUXx2Lw" type="3003" element="_DcPwcFOtEeS395bQUXx2Lw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_DcUo8FOtEeS395bQUXx2Lw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DcUo8VOtEeS395bQUXx2Lw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_teW2cVOkEeSj7fLYwxA_4A" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_teW2clOkEeSj7fLYwxA_4A" x="-22" width="30" height="30"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_teTMEVOkEeSj7fLYwxA_4A" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_teTMElOkEeSj7fLYwxA_4A" x="305" y="110"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_teRW4lOkEeSj7fLYwxA_4A"/>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_teI0AVOkEeSj7fLYwxA_4A" name="E">
+        <target xmi:type="simplifiedADL:Architecture" href="src/E.sadl#//@architecture"/>
+        <semanticElements xmi:type="simplifiedADL:Architecture" href="src/E.sadl#//@architecture"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_teI0AlOkEeSj7fLYwxA_4A" name="i0" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="simplifiedADL:RequiredInterface" href="src/E.sadl#//@architecture/@elements.0"/>
+          <semanticElements xmi:type="simplifiedADL:RequiredInterface" href="src/E.sadl#//@architecture/@elements.0"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_DcPwcFOtEeS395bQUXx2Lw" showIcon="false" labelAlignment="RIGHT">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_DcPwcVOtEeS395bQUXx2Lw"/>
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@borderedNodeMappings[name='RequiredInterfaceBNode']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_DcPwclOtEeS395bQUXx2Lw"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_DcPwc1OtEeS395bQUXx2Lw" red="204" green="242" blue="166"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@borderedNodeMappings[name='RequiredInterfaceBNode']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_teI0DFOkEeSj7fLYwxA_4A" labelFormat="bold" showIcon="false">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_teI0DVOkEeSj7fLYwxA_4A"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_teI0DlOkEeSj7fLYwxA_4A"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_teI0D1OkEeSj7fLYwxA_4A" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_teI0EFOkEeSj7fLYwxA_4A" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_teI0EVOkEeSj7fLYwxA_4A"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer"/>
+      <target xmi:type="simplifiedADL:Definition" href="src/E.sadl#/"/>
+    </ownedRepresentations>
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_wXbVUFOkEeSj7fLYwxA_4A" name="F">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_wXcjcFOkEeSj7fLYwxA_4A" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_wXcjcVOkEeSj7fLYwxA_4A" type="Sirius" element="_wXbVUFOkEeSj7fLYwxA_4A" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_wXcjc1OkEeSj7fLYwxA_4A" type="2002" element="_wXbVUVOkEeSj7fLYwxA_4A">
+            <children xmi:type="notation:Node" xmi:id="_wXdKgFOkEeSj7fLYwxA_4A" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_wXdKgVOkEeSj7fLYwxA_4A" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_wXdKglOkEeSj7fLYwxA_4A"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_wXdKg1OkEeSj7fLYwxA_4A"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_wXdKhFOkEeSj7fLYwxA_4A" type="3012" element="_wXbVUlOkEeSj7fLYwxA_4A">
+              <children xmi:type="notation:Node" xmi:id="_wXdxkFOkEeSj7fLYwxA_4A" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_wXdxkVOkEeSj7fLYwxA_4A" x="31"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_1_plQFOoEeSxjIhz3-zoyQ" type="3003" element="_1_lT0FOoEeSxjIhz3-zoyQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_1_plQVOoEeSxjIhz3-zoyQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1_plQlOoEeSxjIhz3-zoyQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_wXdKhVOkEeSj7fLYwxA_4A" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wXdKhlOkEeSj7fLYwxA_4A" x="-22" width="30" height="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_wXeYoFOkEeSj7fLYwxA_4A" type="3012" element="_wXbVV1OkEeSj7fLYwxA_4A">
+              <children xmi:type="notation:Node" xmi:id="_wXeYo1OkEeSj7fLYwxA_4A" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_wXeYpFOkEeSj7fLYwxA_4A" x="31"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_1_qzYFOoEeSxjIhz3-zoyQ" type="3003" element="_1_l64FOoEeSxjIhz3-zoyQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_1_qzYVOoEeSxjIhz3-zoyQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1_qzYlOoEeSxjIhz3-zoyQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_wXeYoVOkEeSj7fLYwxA_4A" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wXeYolOkEeSj7fLYwxA_4A" x="-22" y="31" width="30" height="30"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_wXcjdFOkEeSj7fLYwxA_4A" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wXcjdVOkEeSj7fLYwxA_4A" x="240" y="110"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_wXcjclOkEeSj7fLYwxA_4A"/>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_wXbVUVOkEeSj7fLYwxA_4A" name="F">
+        <target xmi:type="simplifiedADL:Architecture" href="src/F.sadl#//@architecture"/>
+        <semanticElements xmi:type="simplifiedADL:Architecture" href="src/F.sadl#//@architecture"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_wXbVUlOkEeSj7fLYwxA_4A" name="i0" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="simplifiedADL:ProvidedInterface" href="src/F.sadl#//@architecture/@elements.0"/>
+          <semanticElements xmi:type="simplifiedADL:ProvidedInterface" href="src/F.sadl#//@architecture/@elements.0"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_1_lT0FOoEeSxjIhz3-zoyQ" showIcon="false" labelAlignment="LEFT">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_1_lT0VOoEeSxjIhz3-zoyQ"/>
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@borderedNodeMappings[name='ProvidedInterfaceBNode']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_1_lT0lOoEeSxjIhz3-zoyQ"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_1_lT01OoEeSxjIhz3-zoyQ" red="246" green="139" blue="139"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@borderedNodeMappings[name='ProvidedInterfaceBNode']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_wXbVV1OkEeSj7fLYwxA_4A" name="i1" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="simplifiedADL:ProvidedInterface" href="src/F.sadl#//@architecture/@elements.1"/>
+          <semanticElements xmi:type="simplifiedADL:ProvidedInterface" href="src/F.sadl#//@architecture/@elements.1"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_1_l64FOoEeSxjIhz3-zoyQ" showIcon="false" labelAlignment="LEFT">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_1_l64VOoEeSxjIhz3-zoyQ"/>
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@borderedNodeMappings[name='ProvidedInterfaceBNode']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_1_l64lOoEeSxjIhz3-zoyQ"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_1_l641OoEeSxjIhz3-zoyQ" red="246" green="139" blue="139"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@borderedNodeMappings[name='ProvidedInterfaceBNode']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_wXbVXFOkEeSj7fLYwxA_4A" labelFormat="bold" showIcon="false">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_wXbVXVOkEeSj7fLYwxA_4A"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_wXbVXlOkEeSj7fLYwxA_4A"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_wXbVX1OkEeSj7fLYwxA_4A" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_wXbVYFOkEeSj7fLYwxA_4A" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_wXbVYVOkEeSj7fLYwxA_4A"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer"/>
+      <target xmi:type="simplifiedADL:Definition" href="src/F.sadl#/"/>
+    </ownedRepresentations>
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_yQLmsFOkEeSj7fLYwxA_4A" name="D">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_yQM00FOkEeSj7fLYwxA_4A" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_yQM00VOkEeSj7fLYwxA_4A" type="Sirius" element="_yQLmsFOkEeSj7fLYwxA_4A" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_yQM001OkEeSj7fLYwxA_4A" type="2002" element="_yQLmsVOkEeSj7fLYwxA_4A">
+            <children xmi:type="notation:Node" xmi:id="_yQNb4FOkEeSj7fLYwxA_4A" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_yQNb4VOkEeSj7fLYwxA_4A" type="7001">
+              <children xmi:type="notation:Node" xmi:id="_yQOC8FOkEeSj7fLYwxA_4A" type="3007" element="_yQLmt1OkEeSj7fLYwxA_4A">
+                <children xmi:type="notation:Node" xmi:id="_yQOC81OkEeSj7fLYwxA_4A" type="5003">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_yQOC9FOkEeSj7fLYwxA_4A" y="5"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_yQP4IFOkEeSj7fLYwxA_4A" type="3003" element="_yQLmuFOkEeSj7fLYwxA_4A">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_yQP4IVOkEeSj7fLYwxA_4A" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yQP4IlOkEeSj7fLYwxA_4A"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_-vj4gFOkEeSme4fKMf2iqQ" type="3001" element="_-vY5YFOkEeSme4fKMf2iqQ">
+                  <children xmi:type="notation:Node" xmi:id="_-vni4FOkEeSme4fKMf2iqQ" type="5001">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_-vni4VOkEeSme4fKMf2iqQ" x="31"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_zLEk0FOoEeSxjIhz3-zoyQ" type="3003" element="_zJROAFOoEeSxjIhz3-zoyQ">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_zLEk0VOoEeSxjIhz3-zoyQ" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zLEk0lOoEeSxjIhz3-zoyQ"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_-vj4gVOkEeSme4fKMf2iqQ" fontName="Segoe UI" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-vj4glOkEeSme4fKMf2iqQ" x="153" y="-8" width="30" height="30"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_yQOC8VOkEeSj7fLYwxA_4A" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yQOC8lOkEeSj7fLYwxA_4A" x="40" y="119" width="161" height="96"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_yQPREFOkEeSj7fLYwxA_4A" type="3007" element="_yQLmvFOkEeSj7fLYwxA_4A">
+                <children xmi:type="notation:Node" xmi:id="_yQPRE1OkEeSj7fLYwxA_4A" type="5003">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_yQPRFFOkEeSj7fLYwxA_4A" y="5"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_yQRGQFOkEeSj7fLYwxA_4A" type="3003" element="_yQLmvVOkEeSj7fLYwxA_4A">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_yQRGQVOkEeSj7fLYwxA_4A" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yQRGQlOkEeSj7fLYwxA_4A"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_39bjwFOsEeS395bQUXx2Lw" type="3001" element="_38M0sFOsEeS395bQUXx2Lw">
+                  <children xmi:type="notation:Node" xmi:id="_39cK0FOsEeS395bQUXx2Lw" type="5001">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_39cK0VOsEeS395bQUXx2Lw" x="31"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_39f1MFOsEeS395bQUXx2Lw" type="3003" element="_38M0sVOsEeS395bQUXx2Lw">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_39f1MVOsEeS395bQUXx2Lw" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_39f1MlOsEeS395bQUXx2Lw"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_39bjwVOsEeS395bQUXx2Lw" fontName="Segoe UI" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_39bjwlOsEeS395bQUXx2Lw" x="-22" y="8" width="30" height="30"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_yQPREVOkEeSj7fLYwxA_4A" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yQPRElOkEeSj7fLYwxA_4A" x="340" y="34" width="100" height="71"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_38csUFOsEeS395bQUXx2Lw" type="3007" element="_38Ff8FOsEeS395bQUXx2Lw">
+                <children xmi:type="notation:Node" xmi:id="_38hk0FOsEeS395bQUXx2Lw" type="5003">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_38hk0VOsEeS395bQUXx2Lw" y="5"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_39gcQ1OsEeS395bQUXx2Lw" type="3001" element="_38HVIFOsEeS395bQUXx2Lw">
+                  <children xmi:type="notation:Node" xmi:id="_39hDUFOsEeS395bQUXx2Lw" type="5001">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_39hDUVOsEeS395bQUXx2Lw" x="31"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_39i4gFOsEeS395bQUXx2Lw" type="3003" element="_38HVIVOsEeS395bQUXx2Lw">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_39i4gVOsEeS395bQUXx2Lw" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_39i4glOsEeS395bQUXx2Lw"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_39gcRFOsEeS395bQUXx2Lw" fontName="Segoe UI" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_39gcRVOsEeS395bQUXx2Lw" x="107" y="-8" width="30" height="30"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_39iRcFOsEeS395bQUXx2Lw" type="3003" element="_38Ff8VOsEeS395bQUXx2Lw">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_39iRcVOsEeS395bQUXx2Lw" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_39iRclOsEeS395bQUXx2Lw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_38dTYFOsEeS395bQUXx2Lw" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_38dTYVOsEeS395bQUXx2Lw" x="90" y="29" width="115" height="66"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_yQNb4lOkEeSj7fLYwxA_4A"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_yQNb41OkEeSj7fLYwxA_4A"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_yQM01FOkEeSj7fLYwxA_4A" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yQM01VOkEeSj7fLYwxA_4A" x="120" y="105" width="463" height="238"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_yQM00lOkEeSj7fLYwxA_4A"/>
+          <edges xmi:type="notation:Edge" xmi:id="_HqboIFOtEeS395bQUXx2Lw" type="4001" element="_HqX9wFOtEeS395bQUXx2Lw" source="_-vj4gFOkEeSme4fKMf2iqQ" target="_39gcQ1OsEeS395bQUXx2Lw">
+            <children xmi:type="notation:Node" xmi:id="_HqcPMFOtEeS395bQUXx2Lw" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HqcPMVOtEeS395bQUXx2Lw" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_HqcPMlOtEeS395bQUXx2Lw" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HqcPM1OtEeS395bQUXx2Lw" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_HqcPNFOtEeS395bQUXx2Lw" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HqcPNVOtEeS395bQUXx2Lw" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_HqboIVOtEeS395bQUXx2Lw" routing="Rectilinear" jumpLinkStatus="Above"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_HqboIlOtEeS395bQUXx2Lw" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HqboI1OtEeS395bQUXx2Lw" points="[253, 176, 253, 176]$[88, 114, 88, 114]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Hqc2QFOtEeS395bQUXx2Lw" id="(0.5,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Hqc2QVOtEeS395bQUXx2Lw" id="(0.5,0.5)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_Hqc2QlOtEeS395bQUXx2Lw" type="4001" element="_HqYk0FOtEeS395bQUXx2Lw" source="_39bjwFOsEeS395bQUXx2Lw" target="_39gcQ1OsEeS395bQUXx2Lw">
+            <children xmi:type="notation:Node" xmi:id="_Hqc2RlOtEeS395bQUXx2Lw" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Hqc2R1OtEeS395bQUXx2Lw" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_HqddUFOtEeS395bQUXx2Lw" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HqddUVOtEeS395bQUXx2Lw" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_HqddUlOtEeS395bQUXx2Lw" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HqddU1OtEeS395bQUXx2Lw" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_Hqc2Q1OtEeS395bQUXx2Lw" routing="Rectilinear" jumpLinkStatus="Above"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_Hqc2RFOtEeS395bQUXx2Lw" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Hqc2RVOtEeS395bQUXx2Lw" points="[57, 81, 39, -83]$[-39, 141, -57, -23]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HqddVFOtEeS395bQUXx2Lw" id="(0.5,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HqddVVOtEeS395bQUXx2Lw" id="(0.5,0.5)"/>
+          </edges>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_yQLmsVOkEeSj7fLYwxA_4A" name="D">
+        <target xmi:type="simplifiedADL:Architecture" href="src/D.sadl#//@architecture"/>
+        <semanticElements xmi:type="simplifiedADL:Architecture" href="src/D.sadl#//@architecture"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_yQLmslOkEeSj7fLYwxA_4A" labelFormat="bold" showIcon="false">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_yQLms1OkEeSj7fLYwxA_4A"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_yQLmtFOkEeSj7fLYwxA_4A"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_yQLmtVOkEeSj7fLYwxA_4A" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_yQLmtlOkEeSj7fLYwxA_4A" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']"/>
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_yQLmt1OkEeSj7fLYwxA_4A" name="e0" width="10" height="3" resizeKind="NSEW">
+          <target xmi:type="simplifiedADL:Component" href="src/D.sadl#//@architecture/@elements.0"/>
+          <semanticElements xmi:type="simplifiedADL:Component" href="src/D.sadl#//@architecture/@elements.0"/>
+          <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_-vY5YFOkEeSme4fKMf2iqQ" name="i0" outgoingEdges="_HqX9wFOtEeS395bQUXx2Lw" width="3" height="3" resizeKind="NSEW">
+            <target xmi:type="simplifiedADL:RequiredInterface" href="src/E.sadl#//@architecture/@elements.0"/>
+            <semanticElements xmi:type="simplifiedADL:RequiredInterface" href="src/E.sadl#//@architecture/@elements.0"/>
+            <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+            <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+            <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_zJROAFOoEeSxjIhz3-zoyQ" showIcon="false" labelAlignment="LEFT">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_zJROAVOoEeSxjIhz3-zoyQ"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']/@borderedNodeMappings[name='comp_RequiredInterfaceBNode']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_zJROAlOoEeSxjIhz3-zoyQ"/>
+              <color xmi:type="viewpoint:RGBValues" xmi:id="_zJROA1OoEeSxjIhz3-zoyQ" red="204" green="242" blue="166"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']/@borderedNodeMappings[name='comp_RequiredInterfaceBNode']"/>
+          </ownedBorderedNodes>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_yQLmuFOkEeSj7fLYwxA_4A" showIcon="false" labelPosition="node" width="10" height="3">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_yQLmuVOkEeSj7fLYwxA_4A"/>
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_yQLmulOkEeSj7fLYwxA_4A"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_yQLmu1OkEeSj7fLYwxA_4A" red="194" green="239" blue="255"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_yQLmvFOkEeSj7fLYwxA_4A" name="e1" width="10" height="3" resizeKind="NSEW">
+          <target xmi:type="simplifiedADL:Component" href="src/D.sadl#//@architecture/@elements.1"/>
+          <semanticElements xmi:type="simplifiedADL:Component" href="src/D.sadl#//@architecture/@elements.1"/>
+          <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_38M0sFOsEeS395bQUXx2Lw" name="i0" outgoingEdges="_HqYk0FOtEeS395bQUXx2Lw" width="3" height="3" resizeKind="NSEW">
+            <target xmi:type="simplifiedADL:RequiredInterface" href="src/E.sadl#//@architecture/@elements.0"/>
+            <semanticElements xmi:type="simplifiedADL:RequiredInterface" href="src/E.sadl#//@architecture/@elements.0"/>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_38M0sVOsEeS395bQUXx2Lw" showIcon="false" labelAlignment="LEFT">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_38M0slOsEeS395bQUXx2Lw"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']/@borderedNodeMappings[name='comp_RequiredInterfaceBNode']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_38M0s1OsEeS395bQUXx2Lw"/>
+              <color xmi:type="viewpoint:RGBValues" xmi:id="_38M0tFOsEeS395bQUXx2Lw" red="204" green="242" blue="166"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']/@borderedNodeMappings[name='comp_RequiredInterfaceBNode']"/>
+          </ownedBorderedNodes>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_yQLmvVOkEeSj7fLYwxA_4A" showIcon="false" labelPosition="node" width="10" height="3">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_yQLmvlOkEeSj7fLYwxA_4A"/>
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_yQLmv1OkEeSj7fLYwxA_4A"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_yQLmwFOkEeSj7fLYwxA_4A" red="194" green="239" blue="255"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_38Ff8FOsEeS395bQUXx2Lw" name="f0" width="10" height="3" resizeKind="NSEW">
+          <target xmi:type="simplifiedADL:Component" href="src/D.sadl#//@architecture/@elements.2"/>
+          <semanticElements xmi:type="simplifiedADL:Component" href="src/D.sadl#//@architecture/@elements.2"/>
+          <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_38HVIFOsEeS395bQUXx2Lw" name="i0" incomingEdges="_HqX9wFOtEeS395bQUXx2Lw _HqYk0FOtEeS395bQUXx2Lw" width="3" height="3" resizeKind="NSEW">
+            <target xmi:type="simplifiedADL:ProvidedInterface" href="src/F.sadl#//@architecture/@elements.0"/>
+            <semanticElements xmi:type="simplifiedADL:ProvidedInterface" href="src/F.sadl#//@architecture/@elements.0"/>
+            <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+            <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+            <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_38HVIVOsEeS395bQUXx2Lw" showIcon="false" labelAlignment="RIGHT">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_38HVIlOsEeS395bQUXx2Lw"/>
+              <description xmi:type="style:SquareDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']/@borderedNodeMappings[name='comp_ProvidedInterfaceBNode']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_38HVI1OsEeS395bQUXx2Lw"/>
+              <color xmi:type="viewpoint:RGBValues" xmi:id="_38HVJFOsEeS395bQUXx2Lw" red="246" green="139" blue="139"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']/@borderedNodeMappings[name='comp_ProvidedInterfaceBNode']"/>
+          </ownedBorderedNodes>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_38Ff8VOsEeS395bQUXx2Lw" showIcon="false" labelPosition="node" width="10" height="3">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_38Ff8lOsEeS395bQUXx2Lw"/>
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_38Ff81OsEeS395bQUXx2Lw"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_38Ff9FOsEeS395bQUXx2Lw" red="194" green="239" blue="255"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@containerMappings[name='Architecture']/@subNodeMappings[name='Component']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_HqX9wFOtEeS395bQUXx2Lw" sourceNode="_-vY5YFOkEeSme4fKMf2iqQ" targetNode="_38HVIFOsEeS395bQUXx2Lw">
+        <target xmi:type="simplifiedADL:Binding" href="src/D.sadl#//@architecture/@elements.3"/>
+        <semanticElements xmi:type="simplifiedADL:Binding" href="src/D.sadl#//@architecture/@elements.3"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_HqX9wVOtEeS395bQUXx2Lw" size="2" routingStyle="manhattan">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@edgeMappings[name='BindingEdge']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_HqX9wlOtEeS395bQUXx2Lw" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_HqX9w1OtEeS395bQUXx2Lw">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_HqX9xFOtEeS395bQUXx2Lw"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@edgeMappings[name='BindingEdge']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_HqYk0FOtEeS395bQUXx2Lw" sourceNode="_38M0sFOsEeS395bQUXx2Lw" targetNode="_38HVIFOsEeS395bQUXx2Lw">
+        <target xmi:type="simplifiedADL:Binding" href="src/D.sadl#//@architecture/@elements.3"/>
+        <semanticElements xmi:type="simplifiedADL:Binding" href="src/D.sadl#//@architecture/@elements.3"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_HqYk0VOtEeS395bQUXx2Lw" size="2" routingStyle="manhattan">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@edgeMappings[name='BindingEdge']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_HqYk0lOtEeS395bQUXx2Lw" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_HqYk01OtEeS395bQUXx2Lw">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_HqYk1FOtEeS395bQUXx2Lw"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer/@edgeMappings[name='BindingEdge']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_yQLmwVOkEeSj7fLYwxA_4A"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']/@ownedRepresentations[name='Definition']/@defaultLayer"/>
+      <target xmi:type="simplifiedADL:Definition" href="src/D.sadl#/"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/example.components.simple.sirius.design/description/SimplifiedADL.odesign#//@ownedViewpoints[name='definitionViewport']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>

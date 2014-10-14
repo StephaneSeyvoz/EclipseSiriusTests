@@ -1,0 +1,3 @@
+component B {
+	requires I as i0;
+}
