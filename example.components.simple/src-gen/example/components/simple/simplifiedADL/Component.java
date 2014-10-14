@@ -2,7 +2,6 @@
  */
 package example.components.simple.simplifiedADL;
 
-import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -21,7 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface Component extends EObject
+public interface Component extends ArchitectureElements
 {
   /**
    * Returns the value of the '<em><b>Type</b></em>' reference.

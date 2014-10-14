@@ -18,6 +18,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimplifiedADL.ecore#//Architecture/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SimplifiedADL.ecore#//Architecture/elements"/>
     </genClasses>
+    <genClasses ecoreClass="SimplifiedADL.ecore#//ArchitectureElements"/>
     <genClasses ecoreClass="SimplifiedADL.ecore#//RequiredInterface">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimplifiedADL.ecore#//RequiredInterface/type"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimplifiedADL.ecore#//RequiredInterface/name"/>

@@ -2,7 +2,6 @@
  */
 package example.components.simple.simplifiedADL;
 
-import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,7 +22,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface Binding extends EObject
+public interface Binding extends ArchitectureElements
 {
   /**
    * Returns the value of the '<em><b>Source Component</b></em>' reference.

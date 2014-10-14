@@ -14,7 +14,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +31,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class BindingImpl extends MinimalEObjectImpl.Container implements Binding
+public class BindingImpl extends ArchitectureElementsImpl implements Binding
 {
   /**
    * The cached value of the '{@link #getSourceComponent() <em>Source Component</em>}' reference.

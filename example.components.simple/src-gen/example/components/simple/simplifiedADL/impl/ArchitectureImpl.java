@@ -3,6 +3,7 @@
 package example.components.simple.simplifiedADL.impl;
 
 import example.components.simple.simplifiedADL.Architecture;
+import example.components.simple.simplifiedADL.ArchitectureElements;
 import example.components.simple.simplifiedADL.SimplifiedADLPackage;
 
 import java.util.Collection;
@@ -13,7 +14,6 @@ import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
@@ -66,7 +66,7 @@ public class ArchitectureImpl extends MinimalEObjectImpl.Container implements Ar
    * @generated
    * @ordered
    */
-  protected EList<EObject> elements;
+  protected EList<ArchitectureElements> elements;
 
   /**
    * <!-- begin-user-doc -->
@@ -117,11 +117,11 @@ public class ArchitectureImpl extends MinimalEObjectImpl.Container implements Ar
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<EObject> getElements()
+  public EList<ArchitectureElements> getElements()
   {
     if (elements == null)
     {
-      elements = new EObjectContainmentEList<EObject>(EObject.class, this, SimplifiedADLPackage.ARCHITECTURE__ELEMENTS);
+      elements = new EObjectContainmentEList<ArchitectureElements>(ArchitectureElements.class, this, SimplifiedADLPackage.ARCHITECTURE__ELEMENTS);
     }
     return elements;
   }
@@ -176,7 +176,7 @@ public class ArchitectureImpl extends MinimalEObjectImpl.Container implements Ar
         return;
       case SimplifiedADLPackage.ARCHITECTURE__ELEMENTS:
         getElements().clear();
-        getElements().addAll((Collection<? extends EObject>)newValue);
+        getElements().addAll((Collection<? extends ArchitectureElements>)newValue);
         return;
     }
     super.eSet(featureID, newValue);

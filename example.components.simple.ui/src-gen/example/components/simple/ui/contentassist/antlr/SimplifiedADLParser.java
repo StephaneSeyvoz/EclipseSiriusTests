@@ -37,7 +37,7 @@ public class SimplifiedADLParser extends AbstractContentAssistParser {
 			nameMappings = new HashMap<AbstractElement, String>() {
 				private static final long serialVersionUID = 1L;
 				{
-					put(grammarAccess.getArchitectureAccess().getElementsAlternatives_3_0(), "rule__Architecture__ElementsAlternatives_3_0");
+					put(grammarAccess.getArchitectureElementsAccess().getAlternatives(), "rule__ArchitectureElements__Alternatives");
 					put(grammarAccess.getDefinitionAccess().getGroup(), "rule__Definition__Group__0");
 					put(grammarAccess.getImportsAccess().getGroup(), "rule__Imports__Group__0");
 					put(grammarAccess.getQualifiedNameWithWildcardAccess().getGroup(), "rule__QualifiedNameWithWildcard__Group__0");

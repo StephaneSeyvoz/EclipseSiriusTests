@@ -93,10 +93,18 @@ public class SimplifiedADLSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case SimplifiedADLPackage.ARCHITECTURE_ELEMENTS:
+      {
+        ArchitectureElements architectureElements = (ArchitectureElements)theEObject;
+        T result = caseArchitectureElements(architectureElements);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case SimplifiedADLPackage.REQUIRED_INTERFACE:
       {
         RequiredInterface requiredInterface = (RequiredInterface)theEObject;
         T result = caseRequiredInterface(requiredInterface);
+        if (result == null) result = caseArchitectureElements(requiredInterface);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -104,6 +112,7 @@ public class SimplifiedADLSwitch<T> extends Switch<T>
       {
         ProvidedInterface providedInterface = (ProvidedInterface)theEObject;
         T result = caseProvidedInterface(providedInterface);
+        if (result == null) result = caseArchitectureElements(providedInterface);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -111,6 +120,7 @@ public class SimplifiedADLSwitch<T> extends Switch<T>
       {
         Component component = (Component)theEObject;
         T result = caseComponent(component);
+        if (result == null) result = caseArchitectureElements(component);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -118,6 +128,7 @@ public class SimplifiedADLSwitch<T> extends Switch<T>
       {
         Binding binding = (Binding)theEObject;
         T result = caseBinding(binding);
+        if (result == null) result = caseArchitectureElements(binding);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -169,6 +180,22 @@ public class SimplifiedADLSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseArchitecture(Architecture object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Architecture Elements</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Architecture Elements</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseArchitectureElements(ArchitectureElements object)
   {
     return null;
   }

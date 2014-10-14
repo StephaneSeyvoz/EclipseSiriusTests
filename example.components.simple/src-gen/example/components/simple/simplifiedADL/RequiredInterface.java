@@ -4,8 +4,6 @@ package example.components.simple.simplifiedADL;
 
 import example.interfaces.simple.simplifiedItf.InterfaceDefinition;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Required Interface</b></em>'.
@@ -23,7 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface RequiredInterface extends EObject
+public interface RequiredInterface extends ArchitectureElements
 {
   /**
    * Returns the value of the '<em><b>Type</b></em>' reference.

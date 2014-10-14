@@ -90,6 +90,11 @@ public class SimplifiedADLAdapterFactory extends AdapterFactoryImpl
         return createArchitectureAdapter();
       }
       @Override
+      public Adapter caseArchitectureElements(ArchitectureElements object)
+      {
+        return createArchitectureElementsAdapter();
+      }
+      @Override
       public Adapter caseRequiredInterface(RequiredInterface object)
       {
         return createRequiredInterfaceAdapter();
@@ -172,6 +177,21 @@ public class SimplifiedADLAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createArchitectureAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link example.components.simple.simplifiedADL.ArchitectureElements <em>Architecture Elements</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see example.components.simple.simplifiedADL.ArchitectureElements
+   * @generated
+   */
+  public Adapter createArchitectureElementsAdapter()
   {
     return null;
   }

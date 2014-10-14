@@ -67,6 +67,7 @@ public class SimplifiedADLFactoryImpl extends EFactoryImpl implements Simplified
       case SimplifiedADLPackage.DEFINITION: return createDefinition();
       case SimplifiedADLPackage.IMPORTS: return createImports();
       case SimplifiedADLPackage.ARCHITECTURE: return createArchitecture();
+      case SimplifiedADLPackage.ARCHITECTURE_ELEMENTS: return createArchitectureElements();
       case SimplifiedADLPackage.REQUIRED_INTERFACE: return createRequiredInterface();
       case SimplifiedADLPackage.PROVIDED_INTERFACE: return createProvidedInterface();
       case SimplifiedADLPackage.COMPONENT: return createComponent();
@@ -107,6 +108,17 @@ public class SimplifiedADLFactoryImpl extends EFactoryImpl implements Simplified
   {
     ArchitectureImpl architecture = new ArchitectureImpl();
     return architecture;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public ArchitectureElements createArchitectureElements()
+  {
+    ArchitectureElementsImpl architectureElements = new ArchitectureElementsImpl();
+    return architectureElements;
   }
 
   /**

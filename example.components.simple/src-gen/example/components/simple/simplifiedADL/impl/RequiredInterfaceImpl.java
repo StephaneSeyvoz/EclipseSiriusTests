@@ -13,7 +13,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +28,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class RequiredInterfaceImpl extends MinimalEObjectImpl.Container implements RequiredInterface
+public class RequiredInterfaceImpl extends ArchitectureElementsImpl implements RequiredInterface
 {
   /**
    * The cached value of the '{@link #getType() <em>Type</em>}' reference.

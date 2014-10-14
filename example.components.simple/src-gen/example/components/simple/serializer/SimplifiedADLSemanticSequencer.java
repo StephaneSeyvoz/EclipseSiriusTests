@@ -38,13 +38,15 @@ public class SimplifiedADLSemanticSequencer extends AbstractDelegatingSemanticSe
 				}
 				else break;
 			case SimplifiedADLPackage.BINDING:
-				if(context == grammarAccess.getBindingRule()) {
+				if(context == grammarAccess.getArchitectureElementsRule() ||
+				   context == grammarAccess.getBindingRule()) {
 					sequence_Binding(context, (Binding) semanticObject); 
 					return; 
 				}
 				else break;
 			case SimplifiedADLPackage.COMPONENT:
-				if(context == grammarAccess.getComponentRule()) {
+				if(context == grammarAccess.getArchitectureElementsRule() ||
+				   context == grammarAccess.getComponentRule()) {
 					sequence_Component(context, (Component) semanticObject); 
 					return; 
 				}
@@ -62,13 +64,15 @@ public class SimplifiedADLSemanticSequencer extends AbstractDelegatingSemanticSe
 				}
 				else break;
 			case SimplifiedADLPackage.PROVIDED_INTERFACE:
-				if(context == grammarAccess.getProvidedInterfaceRule()) {
+				if(context == grammarAccess.getArchitectureElementsRule() ||
+				   context == grammarAccess.getProvidedInterfaceRule()) {
 					sequence_ProvidedInterface(context, (ProvidedInterface) semanticObject); 
 					return; 
 				}
 				else break;
 			case SimplifiedADLPackage.REQUIRED_INTERFACE:
-				if(context == grammarAccess.getRequiredInterfaceRule()) {
+				if(context == grammarAccess.getArchitectureElementsRule() ||
+				   context == grammarAccess.getRequiredInterfaceRule()) {
 					sequence_RequiredInterface(context, (RequiredInterface) semanticObject); 
 					return; 
 				}
@@ -79,7 +83,7 @@ public class SimplifiedADLSemanticSequencer extends AbstractDelegatingSemanticSe
 	
 	/**
 	 * Constraint:
-	 *     (name=QualifiedName (elements+=Component | elements+=ProvidedInterface | elements+=RequiredInterface | elements+=Binding)*)
+	 *     (name=QualifiedName elements+=ArchitectureElements*)
 	 */
 	protected void sequence_Architecture(EObject context, Architecture semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

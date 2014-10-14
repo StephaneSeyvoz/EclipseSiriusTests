@@ -3,6 +3,7 @@
 package example.components.simple.simplifiedADL.impl;
 
 import example.components.simple.simplifiedADL.Architecture;
+import example.components.simple.simplifiedADL.ArchitectureElements;
 import example.components.simple.simplifiedADL.Binding;
 import example.components.simple.simplifiedADL.Component;
 import example.components.simple.simplifiedADL.Definition;
@@ -49,6 +50,13 @@ public class SimplifiedADLPackageImpl extends EPackageImpl implements Simplified
    * @generated
    */
   private EClass architectureEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass architectureElementsEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -222,6 +230,16 @@ public class SimplifiedADLPackageImpl extends EPackageImpl implements Simplified
   public EReference getArchitecture_Elements()
   {
     return (EReference)architectureEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getArchitectureElements()
+  {
+    return architectureElementsEClass;
   }
 
   /**
@@ -405,6 +423,8 @@ public class SimplifiedADLPackageImpl extends EPackageImpl implements Simplified
     createEAttribute(architectureEClass, ARCHITECTURE__NAME);
     createEReference(architectureEClass, ARCHITECTURE__ELEMENTS);
 
+    architectureElementsEClass = createEClass(ARCHITECTURE_ELEMENTS);
+
     requiredInterfaceEClass = createEClass(REQUIRED_INTERFACE);
     createEReference(requiredInterfaceEClass, REQUIRED_INTERFACE__TYPE);
     createEAttribute(requiredInterfaceEClass, REQUIRED_INTERFACE__NAME);
@@ -456,6 +476,10 @@ public class SimplifiedADLPackageImpl extends EPackageImpl implements Simplified
     // Set bounds for type parameters
 
     // Add supertypes to classes
+    requiredInterfaceEClass.getESuperTypes().add(this.getArchitectureElements());
+    providedInterfaceEClass.getESuperTypes().add(this.getArchitectureElements());
+    componentEClass.getESuperTypes().add(this.getArchitectureElements());
+    bindingEClass.getESuperTypes().add(this.getArchitectureElements());
 
     // Initialize classes and features; add operations and parameters
     initEClass(definitionEClass, Definition.class, "Definition", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -467,7 +491,9 @@ public class SimplifiedADLPackageImpl extends EPackageImpl implements Simplified
 
     initEClass(architectureEClass, Architecture.class, "Architecture", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getArchitecture_Name(), ecorePackage.getEString(), "name", null, 0, 1, Architecture.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getArchitecture_Elements(), ecorePackage.getEObject(), null, "elements", null, 0, -1, Architecture.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getArchitecture_Elements(), this.getArchitectureElements(), null, "elements", null, 0, -1, Architecture.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(architectureElementsEClass, ArchitectureElements.class, "ArchitectureElements", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(requiredInterfaceEClass, RequiredInterface.class, "RequiredInterface", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getRequiredInterface_Type(), theSimplifiedItfPackage.getInterfaceDefinition(), null, "type", null, 0, 1, RequiredInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

@@ -19,8 +19,12 @@ QualifiedNameWithWildcard:
 
 Architecture:
 	'component' name=QualifiedName '{'
-		elements += (Component | ProvidedInterface | RequiredInterface | Binding)*
+		elements += ArchitectureElements*
 	'}'
+;
+
+ArchitectureElements:
+	Component | ProvidedInterface | RequiredInterface | Binding
 ;
 
 RequiredInterface:

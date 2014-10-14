@@ -102,18 +102,14 @@ public class SimplifiedADLGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cNameQualifiedNameParserRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_2 = (Keyword)cGroup.eContents().get(2);
 		private final Assignment cElementsAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final Alternatives cElementsAlternatives_3_0 = (Alternatives)cElementsAssignment_3.eContents().get(0);
-		private final RuleCall cElementsComponentParserRuleCall_3_0_0 = (RuleCall)cElementsAlternatives_3_0.eContents().get(0);
-		private final RuleCall cElementsProvidedInterfaceParserRuleCall_3_0_1 = (RuleCall)cElementsAlternatives_3_0.eContents().get(1);
-		private final RuleCall cElementsRequiredInterfaceParserRuleCall_3_0_2 = (RuleCall)cElementsAlternatives_3_0.eContents().get(2);
-		private final RuleCall cElementsBindingParserRuleCall_3_0_3 = (RuleCall)cElementsAlternatives_3_0.eContents().get(3);
+		private final RuleCall cElementsArchitectureElementsParserRuleCall_3_0 = (RuleCall)cElementsAssignment_3.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//Architecture:
-		//	"component" name=QualifiedName "{" elements+=(Component | ProvidedInterface | RequiredInterface | Binding)* "}";
+		//	"component" name=QualifiedName "{" elements+=ArchitectureElements* "}";
 		public ParserRule getRule() { return rule; }
 
-		//"component" name=QualifiedName "{" elements+=(Component | ProvidedInterface | RequiredInterface | Binding)* "}"
+		//"component" name=QualifiedName "{" elements+=ArchitectureElements* "}"
 		public Group getGroup() { return cGroup; }
 
 		//"component"
@@ -128,26 +124,42 @@ public class SimplifiedADLGrammarAccess extends AbstractGrammarElementFinder {
 		//"{"
 		public Keyword getLeftCurlyBracketKeyword_2() { return cLeftCurlyBracketKeyword_2; }
 
-		//elements+=(Component | ProvidedInterface | RequiredInterface | Binding)*
+		//elements+=ArchitectureElements*
 		public Assignment getElementsAssignment_3() { return cElementsAssignment_3; }
 
-		//Component | ProvidedInterface | RequiredInterface | Binding
-		public Alternatives getElementsAlternatives_3_0() { return cElementsAlternatives_3_0; }
-
-		//Component
-		public RuleCall getElementsComponentParserRuleCall_3_0_0() { return cElementsComponentParserRuleCall_3_0_0; }
-
-		//ProvidedInterface
-		public RuleCall getElementsProvidedInterfaceParserRuleCall_3_0_1() { return cElementsProvidedInterfaceParserRuleCall_3_0_1; }
-
-		//RequiredInterface
-		public RuleCall getElementsRequiredInterfaceParserRuleCall_3_0_2() { return cElementsRequiredInterfaceParserRuleCall_3_0_2; }
-
-		//Binding
-		public RuleCall getElementsBindingParserRuleCall_3_0_3() { return cElementsBindingParserRuleCall_3_0_3; }
+		//ArchitectureElements
+		public RuleCall getElementsArchitectureElementsParserRuleCall_3_0() { return cElementsArchitectureElementsParserRuleCall_3_0; }
 
 		//"}"
 		public Keyword getRightCurlyBracketKeyword_4() { return cRightCurlyBracketKeyword_4; }
+	}
+
+	public class ArchitectureElementsElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ArchitectureElements");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cComponentParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cProvidedInterfaceParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
+		private final RuleCall cRequiredInterfaceParserRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
+		private final RuleCall cBindingParserRuleCall_3 = (RuleCall)cAlternatives.eContents().get(3);
+		
+		//ArchitectureElements:
+		//	Component | ProvidedInterface | RequiredInterface | Binding;
+		public ParserRule getRule() { return rule; }
+
+		//Component | ProvidedInterface | RequiredInterface | Binding
+		public Alternatives getAlternatives() { return cAlternatives; }
+
+		//Component
+		public RuleCall getComponentParserRuleCall_0() { return cComponentParserRuleCall_0; }
+
+		//ProvidedInterface
+		public RuleCall getProvidedInterfaceParserRuleCall_1() { return cProvidedInterfaceParserRuleCall_1; }
+
+		//RequiredInterface
+		public RuleCall getRequiredInterfaceParserRuleCall_2() { return cRequiredInterfaceParserRuleCall_2; }
+
+		//Binding
+		public RuleCall getBindingParserRuleCall_3() { return cBindingParserRuleCall_3; }
 	}
 
 	public class RequiredInterfaceElements extends AbstractParserRuleElementFinder {
@@ -397,6 +409,7 @@ public class SimplifiedADLGrammarAccess extends AbstractGrammarElementFinder {
 	private final ImportsElements pImports;
 	private final QualifiedNameWithWildcardElements pQualifiedNameWithWildcard;
 	private final ArchitectureElements pArchitecture;
+	private final ArchitectureElementsElements pArchitectureElements;
 	private final RequiredInterfaceElements pRequiredInterface;
 	private final ProvidedInterfaceElements pProvidedInterface;
 	private final ComponentElements pComponent;
@@ -416,6 +429,7 @@ public class SimplifiedADLGrammarAccess extends AbstractGrammarElementFinder {
 		this.pImports = new ImportsElements();
 		this.pQualifiedNameWithWildcard = new QualifiedNameWithWildcardElements();
 		this.pArchitecture = new ArchitectureElements();
+		this.pArchitectureElements = new ArchitectureElementsElements();
 		this.pRequiredInterface = new RequiredInterfaceElements();
 		this.pProvidedInterface = new ProvidedInterfaceElements();
 		this.pComponent = new ComponentElements();
@@ -481,13 +495,23 @@ public class SimplifiedADLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Architecture:
-	//	"component" name=QualifiedName "{" elements+=(Component | ProvidedInterface | RequiredInterface | Binding)* "}";
+	//	"component" name=QualifiedName "{" elements+=ArchitectureElements* "}";
 	public ArchitectureElements getArchitectureAccess() {
 		return pArchitecture;
 	}
 	
 	public ParserRule getArchitectureRule() {
 		return getArchitectureAccess().getRule();
+	}
+
+	//ArchitectureElements:
+	//	Component | ProvidedInterface | RequiredInterface | Binding;
+	public ArchitectureElementsElements getArchitectureElementsAccess() {
+		return pArchitectureElements;
+	}
+	
+	public ParserRule getArchitectureElementsRule() {
+		return getArchitectureElementsAccess().getRule();
 	}
 
 	//RequiredInterface:

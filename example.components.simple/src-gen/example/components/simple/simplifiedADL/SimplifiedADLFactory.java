@@ -50,6 +50,15 @@ public interface SimplifiedADLFactory extends EFactory
   Architecture createArchitecture();
 
   /**
+   * Returns a new object of class '<em>Architecture Elements</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Architecture Elements</em>'.
+   * @generated
+   */
+  ArchitectureElements createArchitectureElements();
+
+  /**
    * Returns a new object of class '<em>Required Interface</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

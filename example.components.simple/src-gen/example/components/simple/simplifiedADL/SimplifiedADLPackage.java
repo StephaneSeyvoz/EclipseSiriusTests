@@ -159,6 +159,25 @@ public interface SimplifiedADLPackage extends EPackage
   int ARCHITECTURE_FEATURE_COUNT = 2;
 
   /**
+   * The meta object id for the '{@link example.components.simple.simplifiedADL.impl.ArchitectureElementsImpl <em>Architecture Elements</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see example.components.simple.simplifiedADL.impl.ArchitectureElementsImpl
+   * @see example.components.simple.simplifiedADL.impl.SimplifiedADLPackageImpl#getArchitectureElements()
+   * @generated
+   */
+  int ARCHITECTURE_ELEMENTS = 3;
+
+  /**
+   * The number of structural features of the '<em>Architecture Elements</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ARCHITECTURE_ELEMENTS_FEATURE_COUNT = 0;
+
+  /**
    * The meta object id for the '{@link example.components.simple.simplifiedADL.impl.RequiredInterfaceImpl <em>Required Interface</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -166,7 +185,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @see example.components.simple.simplifiedADL.impl.SimplifiedADLPackageImpl#getRequiredInterface()
    * @generated
    */
-  int REQUIRED_INTERFACE = 3;
+  int REQUIRED_INTERFACE = 4;
 
   /**
    * The feature id for the '<em><b>Type</b></em>' reference.
@@ -175,7 +194,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int REQUIRED_INTERFACE__TYPE = 0;
+  int REQUIRED_INTERFACE__TYPE = ARCHITECTURE_ELEMENTS_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -184,7 +203,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int REQUIRED_INTERFACE__NAME = 1;
+  int REQUIRED_INTERFACE__NAME = ARCHITECTURE_ELEMENTS_FEATURE_COUNT + 1;
 
   /**
    * The number of structural features of the '<em>Required Interface</em>' class.
@@ -193,7 +212,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int REQUIRED_INTERFACE_FEATURE_COUNT = 2;
+  int REQUIRED_INTERFACE_FEATURE_COUNT = ARCHITECTURE_ELEMENTS_FEATURE_COUNT + 2;
 
   /**
    * The meta object id for the '{@link example.components.simple.simplifiedADL.impl.ProvidedInterfaceImpl <em>Provided Interface</em>}' class.
@@ -203,7 +222,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @see example.components.simple.simplifiedADL.impl.SimplifiedADLPackageImpl#getProvidedInterface()
    * @generated
    */
-  int PROVIDED_INTERFACE = 4;
+  int PROVIDED_INTERFACE = 5;
 
   /**
    * The feature id for the '<em><b>Type</b></em>' reference.
@@ -212,7 +231,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PROVIDED_INTERFACE__TYPE = 0;
+  int PROVIDED_INTERFACE__TYPE = ARCHITECTURE_ELEMENTS_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -221,7 +240,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PROVIDED_INTERFACE__NAME = 1;
+  int PROVIDED_INTERFACE__NAME = ARCHITECTURE_ELEMENTS_FEATURE_COUNT + 1;
 
   /**
    * The number of structural features of the '<em>Provided Interface</em>' class.
@@ -230,7 +249,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PROVIDED_INTERFACE_FEATURE_COUNT = 2;
+  int PROVIDED_INTERFACE_FEATURE_COUNT = ARCHITECTURE_ELEMENTS_FEATURE_COUNT + 2;
 
   /**
    * The meta object id for the '{@link example.components.simple.simplifiedADL.impl.ComponentImpl <em>Component</em>}' class.
@@ -240,7 +259,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @see example.components.simple.simplifiedADL.impl.SimplifiedADLPackageImpl#getComponent()
    * @generated
    */
-  int COMPONENT = 5;
+  int COMPONENT = 6;
 
   /**
    * The feature id for the '<em><b>Type</b></em>' reference.
@@ -249,7 +268,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int COMPONENT__TYPE = 0;
+  int COMPONENT__TYPE = ARCHITECTURE_ELEMENTS_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -258,7 +277,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int COMPONENT__NAME = 1;
+  int COMPONENT__NAME = ARCHITECTURE_ELEMENTS_FEATURE_COUNT + 1;
 
   /**
    * The number of structural features of the '<em>Component</em>' class.
@@ -267,7 +286,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int COMPONENT_FEATURE_COUNT = 2;
+  int COMPONENT_FEATURE_COUNT = ARCHITECTURE_ELEMENTS_FEATURE_COUNT + 2;
 
   /**
    * The meta object id for the '{@link example.components.simple.simplifiedADL.impl.BindingImpl <em>Binding</em>}' class.
@@ -277,7 +296,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @see example.components.simple.simplifiedADL.impl.SimplifiedADLPackageImpl#getBinding()
    * @generated
    */
-  int BINDING = 6;
+  int BINDING = 7;
 
   /**
    * The feature id for the '<em><b>Source Component</b></em>' reference.
@@ -286,7 +305,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int BINDING__SOURCE_COMPONENT = 0;
+  int BINDING__SOURCE_COMPONENT = ARCHITECTURE_ELEMENTS_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Source Interface</b></em>' reference.
@@ -295,7 +314,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int BINDING__SOURCE_INTERFACE = 1;
+  int BINDING__SOURCE_INTERFACE = ARCHITECTURE_ELEMENTS_FEATURE_COUNT + 1;
 
   /**
    * The feature id for the '<em><b>Target Component</b></em>' reference.
@@ -304,7 +323,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int BINDING__TARGET_COMPONENT = 2;
+  int BINDING__TARGET_COMPONENT = ARCHITECTURE_ELEMENTS_FEATURE_COUNT + 2;
 
   /**
    * The feature id for the '<em><b>Target Interface</b></em>' reference.
@@ -313,7 +332,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int BINDING__TARGET_INTERFACE = 3;
+  int BINDING__TARGET_INTERFACE = ARCHITECTURE_ELEMENTS_FEATURE_COUNT + 3;
 
   /**
    * The number of structural features of the '<em>Binding</em>' class.
@@ -322,7 +341,7 @@ public interface SimplifiedADLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int BINDING_FEATURE_COUNT = 4;
+  int BINDING_FEATURE_COUNT = ARCHITECTURE_ELEMENTS_FEATURE_COUNT + 4;
 
 
   /**
@@ -409,6 +428,16 @@ public interface SimplifiedADLPackage extends EPackage
    * @generated
    */
   EReference getArchitecture_Elements();
+
+  /**
+   * Returns the meta object for class '{@link example.components.simple.simplifiedADL.ArchitectureElements <em>Architecture Elements</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Architecture Elements</em>'.
+   * @see example.components.simple.simplifiedADL.ArchitectureElements
+   * @generated
+   */
+  EClass getArchitectureElements();
 
   /**
    * Returns the meta object for class '{@link example.components.simple.simplifiedADL.RequiredInterface <em>Required Interface</em>}'.
@@ -652,6 +681,16 @@ public interface SimplifiedADLPackage extends EPackage
      * @generated
      */
     EReference ARCHITECTURE__ELEMENTS = eINSTANCE.getArchitecture_Elements();
+
+    /**
+     * The meta object literal for the '{@link example.components.simple.simplifiedADL.impl.ArchitectureElementsImpl <em>Architecture Elements</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see example.components.simple.simplifiedADL.impl.ArchitectureElementsImpl
+     * @see example.components.simple.simplifiedADL.impl.SimplifiedADLPackageImpl#getArchitectureElements()
+     * @generated
+     */
+    EClass ARCHITECTURE_ELEMENTS = eINSTANCE.getArchitectureElements();
 
     /**
      * The meta object literal for the '{@link example.components.simple.simplifiedADL.impl.RequiredInterfaceImpl <em>Required Interface</em>}' class.

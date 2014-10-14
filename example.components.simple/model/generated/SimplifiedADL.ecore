@@ -14,21 +14,22 @@
   <eClassifiers xsi:type="ecore:EClass" name="Architecture">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
-        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject" containment="true"/>
+        eType="#//ArchitectureElements" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RequiredInterface">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="ecore:EClass platform:/resource/example.interfaces.simple/model/generated/SimplifiedItf.ecore#//InterfaceDefinition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ArchitectureElements"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RequiredInterface" eSuperTypes="#//ArchitectureElements">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="ecore:EClass ../../../example.interfaces.simple/model/generated/SimplifiedItf.ecore#//InterfaceDefinition"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProvidedInterface">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="ecore:EClass platform:/resource/example.interfaces.simple/model/generated/SimplifiedItf.ecore#//InterfaceDefinition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ProvidedInterface" eSuperTypes="#//ArchitectureElements">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="ecore:EClass ../../../example.interfaces.simple/model/generated/SimplifiedItf.ecore#//InterfaceDefinition"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Component">
+  <eClassifiers xsi:type="ecore:EClass" name="Component" eSuperTypes="#//ArchitectureElements">
     <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//Architecture"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Binding">
+  <eClassifiers xsi:type="ecore:EClass" name="Binding" eSuperTypes="#//ArchitectureElements">
     <eStructuralFeatures xsi:type="ecore:EReference" name="sourceComponent" eType="#//Component"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="sourceInterface" eType="#//RequiredInterface"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetComponent" eType="#//Component"/>
