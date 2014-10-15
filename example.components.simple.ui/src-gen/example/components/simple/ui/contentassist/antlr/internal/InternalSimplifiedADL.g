@@ -1729,8 +1729,8 @@ rule__RequiredInterface__TypeAssignment_1
 (
 { before(grammarAccess.getRequiredInterfaceAccess().getTypeInterfaceDefinitionCrossReference_1_0()); }
 (
-{ before(grammarAccess.getRequiredInterfaceAccess().getTypeInterfaceDefinitionIDTerminalRuleCall_1_0_1()); }
-	RULE_ID{ after(grammarAccess.getRequiredInterfaceAccess().getTypeInterfaceDefinitionIDTerminalRuleCall_1_0_1()); }
+{ before(grammarAccess.getRequiredInterfaceAccess().getTypeInterfaceDefinitionQualifiedNameParserRuleCall_1_0_1()); }
+	ruleQualifiedName{ after(grammarAccess.getRequiredInterfaceAccess().getTypeInterfaceDefinitionQualifiedNameParserRuleCall_1_0_1()); }
 )
 { after(grammarAccess.getRequiredInterfaceAccess().getTypeInterfaceDefinitionCrossReference_1_0()); }
 )
@@ -1763,8 +1763,8 @@ rule__ProvidedInterface__TypeAssignment_1
 (
 { before(grammarAccess.getProvidedInterfaceAccess().getTypeInterfaceDefinitionCrossReference_1_0()); }
 (
-{ before(grammarAccess.getProvidedInterfaceAccess().getTypeInterfaceDefinitionIDTerminalRuleCall_1_0_1()); }
-	RULE_ID{ after(grammarAccess.getProvidedInterfaceAccess().getTypeInterfaceDefinitionIDTerminalRuleCall_1_0_1()); }
+{ before(grammarAccess.getProvidedInterfaceAccess().getTypeInterfaceDefinitionQualifiedNameParserRuleCall_1_0_1()); }
+	ruleQualifiedName{ after(grammarAccess.getProvidedInterfaceAccess().getTypeInterfaceDefinitionQualifiedNameParserRuleCall_1_0_1()); }
 )
 { after(grammarAccess.getProvidedInterfaceAccess().getTypeInterfaceDefinitionCrossReference_1_0()); }
 )

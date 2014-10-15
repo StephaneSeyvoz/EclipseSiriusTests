@@ -28,11 +28,11 @@ ArchitectureElements:
 ;
 
 RequiredInterface:
-	'requires' type = [SimplifiedItf::InterfaceDefinition] 'as' name = ID ';'
+	'requires' type = [SimplifiedItf::InterfaceDefinition | QualifiedName] 'as' name = ID ';'
 ;
 
 ProvidedInterface:
-	'provides' type = [SimplifiedItf::InterfaceDefinition] 'as' name = ID ';'
+	'provides' type = [SimplifiedItf::InterfaceDefinition| QualifiedName] 'as' name = ID ';'
 ;
 
 Component:

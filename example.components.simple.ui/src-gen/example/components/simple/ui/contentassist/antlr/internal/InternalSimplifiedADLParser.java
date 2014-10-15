@@ -4375,25 +4375,29 @@ public class InternalSimplifiedADLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__RequiredInterface__TypeAssignment_1"
-    // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1724:1: rule__RequiredInterface__TypeAssignment_1 : ( ( RULE_ID ) ) ;
+    // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1724:1: rule__RequiredInterface__TypeAssignment_1 : ( ( ruleQualifiedName ) ) ;
     public final void rule__RequiredInterface__TypeAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1728:1: ( ( ( RULE_ID ) ) )
-            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1729:1: ( ( RULE_ID ) )
+            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1728:1: ( ( ( ruleQualifiedName ) ) )
+            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1729:1: ( ( ruleQualifiedName ) )
             {
-            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1729:1: ( ( RULE_ID ) )
-            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1730:1: ( RULE_ID )
+            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1729:1: ( ( ruleQualifiedName ) )
+            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1730:1: ( ruleQualifiedName )
             {
              before(grammarAccess.getRequiredInterfaceAccess().getTypeInterfaceDefinitionCrossReference_1_0()); 
-            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1731:1: ( RULE_ID )
-            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1732:1: RULE_ID
+            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1731:1: ( ruleQualifiedName )
+            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1732:1: ruleQualifiedName
             {
-             before(grammarAccess.getRequiredInterfaceAccess().getTypeInterfaceDefinitionIDTerminalRuleCall_1_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__RequiredInterface__TypeAssignment_13410); 
-             after(grammarAccess.getRequiredInterfaceAccess().getTypeInterfaceDefinitionIDTerminalRuleCall_1_0_1()); 
+             before(grammarAccess.getRequiredInterfaceAccess().getTypeInterfaceDefinitionQualifiedNameParserRuleCall_1_0_1()); 
+            pushFollow(FOLLOW_ruleQualifiedName_in_rule__RequiredInterface__TypeAssignment_13410);
+            ruleQualifiedName();
+
+            state._fsp--;
+
+             after(grammarAccess.getRequiredInterfaceAccess().getTypeInterfaceDefinitionQualifiedNameParserRuleCall_1_0_1()); 
 
             }
 
@@ -4457,25 +4461,29 @@ public class InternalSimplifiedADLParser extends AbstractInternalContentAssistPa
 
 
     // $ANTLR start "rule__ProvidedInterface__TypeAssignment_1"
-    // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1758:1: rule__ProvidedInterface__TypeAssignment_1 : ( ( RULE_ID ) ) ;
+    // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1758:1: rule__ProvidedInterface__TypeAssignment_1 : ( ( ruleQualifiedName ) ) ;
     public final void rule__ProvidedInterface__TypeAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1762:1: ( ( ( RULE_ID ) ) )
-            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1763:1: ( ( RULE_ID ) )
+            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1762:1: ( ( ( ruleQualifiedName ) ) )
+            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1763:1: ( ( ruleQualifiedName ) )
             {
-            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1763:1: ( ( RULE_ID ) )
-            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1764:1: ( RULE_ID )
+            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1763:1: ( ( ruleQualifiedName ) )
+            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1764:1: ( ruleQualifiedName )
             {
              before(grammarAccess.getProvidedInterfaceAccess().getTypeInterfaceDefinitionCrossReference_1_0()); 
-            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1765:1: ( RULE_ID )
-            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1766:1: RULE_ID
+            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1765:1: ( ruleQualifiedName )
+            // ../example.components.simple.ui/src-gen/example/components/simple/ui/contentassist/antlr/internal/InternalSimplifiedADL.g:1766:1: ruleQualifiedName
             {
-             before(grammarAccess.getProvidedInterfaceAccess().getTypeInterfaceDefinitionIDTerminalRuleCall_1_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ProvidedInterface__TypeAssignment_13480); 
-             after(grammarAccess.getProvidedInterfaceAccess().getTypeInterfaceDefinitionIDTerminalRuleCall_1_0_1()); 
+             before(grammarAccess.getProvidedInterfaceAccess().getTypeInterfaceDefinitionQualifiedNameParserRuleCall_1_0_1()); 
+            pushFollow(FOLLOW_ruleQualifiedName_in_rule__ProvidedInterface__TypeAssignment_13480);
+            ruleQualifiedName();
+
+            state._fsp--;
+
+             after(grammarAccess.getProvidedInterfaceAccess().getTypeInterfaceDefinitionQualifiedNameParserRuleCall_1_0_1()); 
 
             }
 
@@ -4957,9 +4965,9 @@ public class InternalSimplifiedADLParser extends AbstractInternalContentAssistPa
     public static final BitSet FOLLOW_ruleQualifiedNameWithWildcard_in_rule__Imports__ImportedNamespaceAssignment_13313 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleQualifiedName_in_rule__Architecture__NameAssignment_13344 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleArchitectureElements_in_rule__Architecture__ElementsAssignment_33375 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__RequiredInterface__TypeAssignment_13410 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__RequiredInterface__TypeAssignment_13410 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__RequiredInterface__NameAssignment_33445 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__ProvidedInterface__TypeAssignment_13480 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__ProvidedInterface__TypeAssignment_13480 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__ProvidedInterface__NameAssignment_33515 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleQualifiedName_in_rule__Component__TypeAssignment_13550 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Component__NameAssignment_33585 = new BitSet(new long[]{0x0000000000000002L});

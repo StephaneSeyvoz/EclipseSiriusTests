@@ -168,30 +168,30 @@ public class SimplifiedADLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRequiresKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cTypeAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final CrossReference cTypeInterfaceDefinitionCrossReference_1_0 = (CrossReference)cTypeAssignment_1.eContents().get(0);
-		private final RuleCall cTypeInterfaceDefinitionIDTerminalRuleCall_1_0_1 = (RuleCall)cTypeInterfaceDefinitionCrossReference_1_0.eContents().get(1);
+		private final RuleCall cTypeInterfaceDefinitionQualifiedNameParserRuleCall_1_0_1 = (RuleCall)cTypeInterfaceDefinitionCrossReference_1_0.eContents().get(1);
 		private final Keyword cAsKeyword_2 = (Keyword)cGroup.eContents().get(2);
 		private final Assignment cNameAssignment_3 = (Assignment)cGroup.eContents().get(3);
 		private final RuleCall cNameIDTerminalRuleCall_3_0 = (RuleCall)cNameAssignment_3.eContents().get(0);
 		private final Keyword cSemicolonKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//RequiredInterface:
-		//	"requires" type=[SimplifiedItf::InterfaceDefinition] "as" name=ID ";";
+		//	"requires" type=[SimplifiedItf::InterfaceDefinition|QualifiedName] "as" name=ID ";";
 		public ParserRule getRule() { return rule; }
 
-		//"requires" type=[SimplifiedItf::InterfaceDefinition] "as" name=ID ";"
+		//"requires" type=[SimplifiedItf::InterfaceDefinition|QualifiedName] "as" name=ID ";"
 		public Group getGroup() { return cGroup; }
 
 		//"requires"
 		public Keyword getRequiresKeyword_0() { return cRequiresKeyword_0; }
 
-		//type=[SimplifiedItf::InterfaceDefinition]
+		//type=[SimplifiedItf::InterfaceDefinition|QualifiedName]
 		public Assignment getTypeAssignment_1() { return cTypeAssignment_1; }
 
-		//[SimplifiedItf::InterfaceDefinition]
+		//[SimplifiedItf::InterfaceDefinition|QualifiedName]
 		public CrossReference getTypeInterfaceDefinitionCrossReference_1_0() { return cTypeInterfaceDefinitionCrossReference_1_0; }
 
-		//ID
-		public RuleCall getTypeInterfaceDefinitionIDTerminalRuleCall_1_0_1() { return cTypeInterfaceDefinitionIDTerminalRuleCall_1_0_1; }
+		//QualifiedName
+		public RuleCall getTypeInterfaceDefinitionQualifiedNameParserRuleCall_1_0_1() { return cTypeInterfaceDefinitionQualifiedNameParserRuleCall_1_0_1; }
 
 		//"as"
 		public Keyword getAsKeyword_2() { return cAsKeyword_2; }
@@ -212,30 +212,30 @@ public class SimplifiedADLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cProvidesKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cTypeAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final CrossReference cTypeInterfaceDefinitionCrossReference_1_0 = (CrossReference)cTypeAssignment_1.eContents().get(0);
-		private final RuleCall cTypeInterfaceDefinitionIDTerminalRuleCall_1_0_1 = (RuleCall)cTypeInterfaceDefinitionCrossReference_1_0.eContents().get(1);
+		private final RuleCall cTypeInterfaceDefinitionQualifiedNameParserRuleCall_1_0_1 = (RuleCall)cTypeInterfaceDefinitionCrossReference_1_0.eContents().get(1);
 		private final Keyword cAsKeyword_2 = (Keyword)cGroup.eContents().get(2);
 		private final Assignment cNameAssignment_3 = (Assignment)cGroup.eContents().get(3);
 		private final RuleCall cNameIDTerminalRuleCall_3_0 = (RuleCall)cNameAssignment_3.eContents().get(0);
 		private final Keyword cSemicolonKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//ProvidedInterface:
-		//	"provides" type=[SimplifiedItf::InterfaceDefinition] "as" name=ID ";";
+		//	"provides" type=[SimplifiedItf::InterfaceDefinition|QualifiedName] "as" name=ID ";";
 		public ParserRule getRule() { return rule; }
 
-		//"provides" type=[SimplifiedItf::InterfaceDefinition] "as" name=ID ";"
+		//"provides" type=[SimplifiedItf::InterfaceDefinition|QualifiedName] "as" name=ID ";"
 		public Group getGroup() { return cGroup; }
 
 		//"provides"
 		public Keyword getProvidesKeyword_0() { return cProvidesKeyword_0; }
 
-		//type=[SimplifiedItf::InterfaceDefinition]
+		//type=[SimplifiedItf::InterfaceDefinition|QualifiedName]
 		public Assignment getTypeAssignment_1() { return cTypeAssignment_1; }
 
-		//[SimplifiedItf::InterfaceDefinition]
+		//[SimplifiedItf::InterfaceDefinition|QualifiedName]
 		public CrossReference getTypeInterfaceDefinitionCrossReference_1_0() { return cTypeInterfaceDefinitionCrossReference_1_0; }
 
-		//ID
-		public RuleCall getTypeInterfaceDefinitionIDTerminalRuleCall_1_0_1() { return cTypeInterfaceDefinitionIDTerminalRuleCall_1_0_1; }
+		//QualifiedName
+		public RuleCall getTypeInterfaceDefinitionQualifiedNameParserRuleCall_1_0_1() { return cTypeInterfaceDefinitionQualifiedNameParserRuleCall_1_0_1; }
 
 		//"as"
 		public Keyword getAsKeyword_2() { return cAsKeyword_2; }
@@ -515,7 +515,7 @@ public class SimplifiedADLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//RequiredInterface:
-	//	"requires" type=[SimplifiedItf::InterfaceDefinition] "as" name=ID ";";
+	//	"requires" type=[SimplifiedItf::InterfaceDefinition|QualifiedName] "as" name=ID ";";
 	public RequiredInterfaceElements getRequiredInterfaceAccess() {
 		return pRequiredInterface;
 	}
@@ -525,7 +525,7 @@ public class SimplifiedADLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//ProvidedInterface:
-	//	"provides" type=[SimplifiedItf::InterfaceDefinition] "as" name=ID ";";
+	//	"provides" type=[SimplifiedItf::InterfaceDefinition|QualifiedName] "as" name=ID ";";
 	public ProvidedInterfaceElements getProvidedInterfaceAccess() {
 		return pProvidedInterface;
 	}

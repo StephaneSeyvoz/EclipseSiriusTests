@@ -161,7 +161,7 @@ public class SimplifiedADLSemanticSequencer extends AbstractDelegatingSemanticSe
 	
 	/**
 	 * Constraint:
-	 *     (type=[InterfaceDefinition|ID] name=ID)
+	 *     (type=[InterfaceDefinition|QualifiedName] name=ID)
 	 */
 	protected void sequence_ProvidedInterface(EObject context, ProvidedInterface semanticObject) {
 		if(errorAcceptor != null) {
@@ -172,7 +172,7 @@ public class SimplifiedADLSemanticSequencer extends AbstractDelegatingSemanticSe
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getProvidedInterfaceAccess().getTypeInterfaceDefinitionIDTerminalRuleCall_1_0_1(), semanticObject.getType());
+		feeder.accept(grammarAccess.getProvidedInterfaceAccess().getTypeInterfaceDefinitionQualifiedNameParserRuleCall_1_0_1(), semanticObject.getType());
 		feeder.accept(grammarAccess.getProvidedInterfaceAccess().getNameIDTerminalRuleCall_3_0(), semanticObject.getName());
 		feeder.finish();
 	}
@@ -180,7 +180,7 @@ public class SimplifiedADLSemanticSequencer extends AbstractDelegatingSemanticSe
 	
 	/**
 	 * Constraint:
-	 *     (type=[InterfaceDefinition|ID] name=ID)
+	 *     (type=[InterfaceDefinition|QualifiedName] name=ID)
 	 */
 	protected void sequence_RequiredInterface(EObject context, RequiredInterface semanticObject) {
 		if(errorAcceptor != null) {
@@ -191,7 +191,7 @@ public class SimplifiedADLSemanticSequencer extends AbstractDelegatingSemanticSe
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getRequiredInterfaceAccess().getTypeInterfaceDefinitionIDTerminalRuleCall_1_0_1(), semanticObject.getType());
+		feeder.accept(grammarAccess.getRequiredInterfaceAccess().getTypeInterfaceDefinitionQualifiedNameParserRuleCall_1_0_1(), semanticObject.getType());
 		feeder.accept(grammarAccess.getRequiredInterfaceAccess().getNameIDTerminalRuleCall_3_0(), semanticObject.getName());
 		feeder.finish();
 	}

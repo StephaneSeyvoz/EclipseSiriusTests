@@ -848,12 +848,11 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRequiredInterface"
-    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:347:1: ruleRequiredInterface returns [EObject current=null] : (otherlv_0= 'requires' ( (otherlv_1= RULE_ID ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' ) ;
+    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:347:1: ruleRequiredInterface returns [EObject current=null] : (otherlv_0= 'requires' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' ) ;
     public final EObject ruleRequiredInterface() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
-        Token otherlv_1=null;
         Token otherlv_2=null;
         Token lv_name_3_0=null;
         Token otherlv_4=null;
@@ -861,48 +860,55 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:350:28: ( (otherlv_0= 'requires' ( (otherlv_1= RULE_ID ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' ) )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:351:1: (otherlv_0= 'requires' ( (otherlv_1= RULE_ID ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:350:28: ( (otherlv_0= 'requires' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' ) )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:351:1: (otherlv_0= 'requires' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' )
             {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:351:1: (otherlv_0= 'requires' ( (otherlv_1= RULE_ID ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:351:3: otherlv_0= 'requires' ( (otherlv_1= RULE_ID ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';'
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:351:1: (otherlv_0= 'requires' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:351:3: otherlv_0= 'requires' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';'
             {
             otherlv_0=(Token)match(input,17,FOLLOW_17_in_ruleRequiredInterface795); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getRequiredInterfaceAccess().getRequiresKeyword_0());
                 
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:355:1: ( (otherlv_1= RULE_ID ) )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:356:1: (otherlv_1= RULE_ID )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:355:1: ( ( ruleQualifiedName ) )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:356:1: ( ruleQualifiedName )
             {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:356:1: (otherlv_1= RULE_ID )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:357:3: otherlv_1= RULE_ID
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:356:1: ( ruleQualifiedName )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:357:3: ruleQualifiedName
             {
 
             			if (current==null) {
             	            current = createModelElement(grammarAccess.getRequiredInterfaceRule());
             	        }
                     
-            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRequiredInterface815); 
+             
+            	        newCompositeNode(grammarAccess.getRequiredInterfaceAccess().getTypeInterfaceDefinitionCrossReference_1_0()); 
+            	    
+            pushFollow(FOLLOW_ruleQualifiedName_in_ruleRequiredInterface818);
+            ruleQualifiedName();
 
-            		newLeafNode(otherlv_1, grammarAccess.getRequiredInterfaceAccess().getTypeInterfaceDefinitionCrossReference_1_0()); 
-            	
+            state._fsp--;
+
+             
+            	        afterParserOrEnumRuleCall();
+            	    
 
             }
 
 
             }
 
-            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleRequiredInterface827); 
+            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleRequiredInterface830); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getRequiredInterfaceAccess().getAsKeyword_2());
                 
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:372:1: ( (lv_name_3_0= RULE_ID ) )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:373:1: (lv_name_3_0= RULE_ID )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:374:1: ( (lv_name_3_0= RULE_ID ) )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:375:1: (lv_name_3_0= RULE_ID )
             {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:373:1: (lv_name_3_0= RULE_ID )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:374:3: lv_name_3_0= RULE_ID
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:375:1: (lv_name_3_0= RULE_ID )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:376:3: lv_name_3_0= RULE_ID
             {
-            lv_name_3_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRequiredInterface844); 
+            lv_name_3_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRequiredInterface847); 
 
             			newLeafNode(lv_name_3_0, grammarAccess.getRequiredInterfaceAccess().getNameIDTerminalRuleCall_3_0()); 
             		
@@ -922,7 +928,7 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,12,FOLLOW_12_in_ruleRequiredInterface861); 
+            otherlv_4=(Token)match(input,12,FOLLOW_12_in_ruleRequiredInterface864); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getRequiredInterfaceAccess().getSemicolonKeyword_4());
                 
@@ -947,7 +953,7 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleProvidedInterface"
-    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:402:1: entryRuleProvidedInterface returns [EObject current=null] : iv_ruleProvidedInterface= ruleProvidedInterface EOF ;
+    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:404:1: entryRuleProvidedInterface returns [EObject current=null] : iv_ruleProvidedInterface= ruleProvidedInterface EOF ;
     public final EObject entryRuleProvidedInterface() throws RecognitionException {
         EObject current = null;
 
@@ -955,17 +961,17 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:403:2: (iv_ruleProvidedInterface= ruleProvidedInterface EOF )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:404:2: iv_ruleProvidedInterface= ruleProvidedInterface EOF
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:405:2: (iv_ruleProvidedInterface= ruleProvidedInterface EOF )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:406:2: iv_ruleProvidedInterface= ruleProvidedInterface EOF
             {
              newCompositeNode(grammarAccess.getProvidedInterfaceRule()); 
-            pushFollow(FOLLOW_ruleProvidedInterface_in_entryRuleProvidedInterface897);
+            pushFollow(FOLLOW_ruleProvidedInterface_in_entryRuleProvidedInterface900);
             iv_ruleProvidedInterface=ruleProvidedInterface();
 
             state._fsp--;
 
              current =iv_ruleProvidedInterface; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleProvidedInterface907); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleProvidedInterface910); 
 
             }
 
@@ -983,12 +989,11 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleProvidedInterface"
-    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:411:1: ruleProvidedInterface returns [EObject current=null] : (otherlv_0= 'provides' ( (otherlv_1= RULE_ID ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' ) ;
+    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:413:1: ruleProvidedInterface returns [EObject current=null] : (otherlv_0= 'provides' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' ) ;
     public final EObject ruleProvidedInterface() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
-        Token otherlv_1=null;
         Token otherlv_2=null;
         Token lv_name_3_0=null;
         Token otherlv_4=null;
@@ -996,48 +1001,55 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:414:28: ( (otherlv_0= 'provides' ( (otherlv_1= RULE_ID ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' ) )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:415:1: (otherlv_0= 'provides' ( (otherlv_1= RULE_ID ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:416:28: ( (otherlv_0= 'provides' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' ) )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:417:1: (otherlv_0= 'provides' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' )
             {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:415:1: (otherlv_0= 'provides' ( (otherlv_1= RULE_ID ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:415:3: otherlv_0= 'provides' ( (otherlv_1= RULE_ID ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';'
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:417:1: (otherlv_0= 'provides' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:417:3: otherlv_0= 'provides' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';'
             {
-            otherlv_0=(Token)match(input,19,FOLLOW_19_in_ruleProvidedInterface944); 
+            otherlv_0=(Token)match(input,19,FOLLOW_19_in_ruleProvidedInterface947); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getProvidedInterfaceAccess().getProvidesKeyword_0());
                 
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:419:1: ( (otherlv_1= RULE_ID ) )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:420:1: (otherlv_1= RULE_ID )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:421:1: ( ( ruleQualifiedName ) )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:422:1: ( ruleQualifiedName )
             {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:420:1: (otherlv_1= RULE_ID )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:421:3: otherlv_1= RULE_ID
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:422:1: ( ruleQualifiedName )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:423:3: ruleQualifiedName
             {
 
             			if (current==null) {
             	            current = createModelElement(grammarAccess.getProvidedInterfaceRule());
             	        }
                     
-            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleProvidedInterface964); 
+             
+            	        newCompositeNode(grammarAccess.getProvidedInterfaceAccess().getTypeInterfaceDefinitionCrossReference_1_0()); 
+            	    
+            pushFollow(FOLLOW_ruleQualifiedName_in_ruleProvidedInterface970);
+            ruleQualifiedName();
 
-            		newLeafNode(otherlv_1, grammarAccess.getProvidedInterfaceAccess().getTypeInterfaceDefinitionCrossReference_1_0()); 
-            	
+            state._fsp--;
+
+             
+            	        afterParserOrEnumRuleCall();
+            	    
 
             }
 
 
             }
 
-            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleProvidedInterface976); 
+            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleProvidedInterface982); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getProvidedInterfaceAccess().getAsKeyword_2());
                 
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:436:1: ( (lv_name_3_0= RULE_ID ) )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:437:1: (lv_name_3_0= RULE_ID )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:440:1: ( (lv_name_3_0= RULE_ID ) )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:441:1: (lv_name_3_0= RULE_ID )
             {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:437:1: (lv_name_3_0= RULE_ID )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:438:3: lv_name_3_0= RULE_ID
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:441:1: (lv_name_3_0= RULE_ID )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:442:3: lv_name_3_0= RULE_ID
             {
-            lv_name_3_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleProvidedInterface993); 
+            lv_name_3_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleProvidedInterface999); 
 
             			newLeafNode(lv_name_3_0, grammarAccess.getProvidedInterfaceAccess().getNameIDTerminalRuleCall_3_0()); 
             		
@@ -1057,7 +1069,7 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,12,FOLLOW_12_in_ruleProvidedInterface1010); 
+            otherlv_4=(Token)match(input,12,FOLLOW_12_in_ruleProvidedInterface1016); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getProvidedInterfaceAccess().getSemicolonKeyword_4());
                 
@@ -1082,7 +1094,7 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleComponent"
-    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:466:1: entryRuleComponent returns [EObject current=null] : iv_ruleComponent= ruleComponent EOF ;
+    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:470:1: entryRuleComponent returns [EObject current=null] : iv_ruleComponent= ruleComponent EOF ;
     public final EObject entryRuleComponent() throws RecognitionException {
         EObject current = null;
 
@@ -1090,17 +1102,17 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:467:2: (iv_ruleComponent= ruleComponent EOF )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:468:2: iv_ruleComponent= ruleComponent EOF
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:471:2: (iv_ruleComponent= ruleComponent EOF )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:472:2: iv_ruleComponent= ruleComponent EOF
             {
              newCompositeNode(grammarAccess.getComponentRule()); 
-            pushFollow(FOLLOW_ruleComponent_in_entryRuleComponent1046);
+            pushFollow(FOLLOW_ruleComponent_in_entryRuleComponent1052);
             iv_ruleComponent=ruleComponent();
 
             state._fsp--;
 
              current =iv_ruleComponent; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleComponent1056); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleComponent1062); 
 
             }
 
@@ -1118,7 +1130,7 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleComponent"
-    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:475:1: ruleComponent returns [EObject current=null] : (otherlv_0= 'contains' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' ) ;
+    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:479:1: ruleComponent returns [EObject current=null] : (otherlv_0= 'contains' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' ) ;
     public final EObject ruleComponent() throws RecognitionException {
         EObject current = null;
 
@@ -1130,21 +1142,21 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:478:28: ( (otherlv_0= 'contains' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' ) )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:479:1: (otherlv_0= 'contains' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:482:28: ( (otherlv_0= 'contains' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' ) )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:483:1: (otherlv_0= 'contains' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' )
             {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:479:1: (otherlv_0= 'contains' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:479:3: otherlv_0= 'contains' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';'
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:483:1: (otherlv_0= 'contains' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';' )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:483:3: otherlv_0= 'contains' ( ( ruleQualifiedName ) ) otherlv_2= 'as' ( (lv_name_3_0= RULE_ID ) ) otherlv_4= ';'
             {
-            otherlv_0=(Token)match(input,20,FOLLOW_20_in_ruleComponent1093); 
+            otherlv_0=(Token)match(input,20,FOLLOW_20_in_ruleComponent1099); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getComponentAccess().getContainsKeyword_0());
                 
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:483:1: ( ( ruleQualifiedName ) )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:484:1: ( ruleQualifiedName )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:487:1: ( ( ruleQualifiedName ) )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:488:1: ( ruleQualifiedName )
             {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:484:1: ( ruleQualifiedName )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:485:3: ruleQualifiedName
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:488:1: ( ruleQualifiedName )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:489:3: ruleQualifiedName
             {
 
             			if (current==null) {
@@ -1154,7 +1166,7 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getComponentAccess().getTypeArchitectureCrossReference_1_0()); 
             	    
-            pushFollow(FOLLOW_ruleQualifiedName_in_ruleComponent1116);
+            pushFollow(FOLLOW_ruleQualifiedName_in_ruleComponent1122);
             ruleQualifiedName();
 
             state._fsp--;
@@ -1168,17 +1180,17 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleComponent1128); 
+            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleComponent1134); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getComponentAccess().getAsKeyword_2());
                 
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:502:1: ( (lv_name_3_0= RULE_ID ) )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:503:1: (lv_name_3_0= RULE_ID )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:506:1: ( (lv_name_3_0= RULE_ID ) )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:507:1: (lv_name_3_0= RULE_ID )
             {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:503:1: (lv_name_3_0= RULE_ID )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:504:3: lv_name_3_0= RULE_ID
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:507:1: (lv_name_3_0= RULE_ID )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:508:3: lv_name_3_0= RULE_ID
             {
-            lv_name_3_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleComponent1145); 
+            lv_name_3_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleComponent1151); 
 
             			newLeafNode(lv_name_3_0, grammarAccess.getComponentAccess().getNameIDTerminalRuleCall_3_0()); 
             		
@@ -1198,7 +1210,7 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,12,FOLLOW_12_in_ruleComponent1162); 
+            otherlv_4=(Token)match(input,12,FOLLOW_12_in_ruleComponent1168); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getComponentAccess().getSemicolonKeyword_4());
                 
@@ -1223,7 +1235,7 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleBinding"
-    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:532:1: entryRuleBinding returns [EObject current=null] : iv_ruleBinding= ruleBinding EOF ;
+    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:536:1: entryRuleBinding returns [EObject current=null] : iv_ruleBinding= ruleBinding EOF ;
     public final EObject entryRuleBinding() throws RecognitionException {
         EObject current = null;
 
@@ -1231,17 +1243,17 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:533:2: (iv_ruleBinding= ruleBinding EOF )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:534:2: iv_ruleBinding= ruleBinding EOF
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:537:2: (iv_ruleBinding= ruleBinding EOF )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:538:2: iv_ruleBinding= ruleBinding EOF
             {
              newCompositeNode(grammarAccess.getBindingRule()); 
-            pushFollow(FOLLOW_ruleBinding_in_entryRuleBinding1198);
+            pushFollow(FOLLOW_ruleBinding_in_entryRuleBinding1204);
             iv_ruleBinding=ruleBinding();
 
             state._fsp--;
 
              current =iv_ruleBinding; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleBinding1208); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleBinding1214); 
 
             }
 
@@ -1259,7 +1271,7 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleBinding"
-    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:541:1: ruleBinding returns [EObject current=null] : (otherlv_0= 'binds' ( (otherlv_1= RULE_ID ) ) otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'to' ( (otherlv_5= RULE_ID ) ) otherlv_6= '.' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';' ) ;
+    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:545:1: ruleBinding returns [EObject current=null] : (otherlv_0= 'binds' ( (otherlv_1= RULE_ID ) ) otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'to' ( (otherlv_5= RULE_ID ) ) otherlv_6= '.' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';' ) ;
     public final EObject ruleBinding() throws RecognitionException {
         EObject current = null;
 
@@ -1276,28 +1288,28 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:544:28: ( (otherlv_0= 'binds' ( (otherlv_1= RULE_ID ) ) otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'to' ( (otherlv_5= RULE_ID ) ) otherlv_6= '.' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';' ) )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:545:1: (otherlv_0= 'binds' ( (otherlv_1= RULE_ID ) ) otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'to' ( (otherlv_5= RULE_ID ) ) otherlv_6= '.' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';' )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:548:28: ( (otherlv_0= 'binds' ( (otherlv_1= RULE_ID ) ) otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'to' ( (otherlv_5= RULE_ID ) ) otherlv_6= '.' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';' ) )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:549:1: (otherlv_0= 'binds' ( (otherlv_1= RULE_ID ) ) otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'to' ( (otherlv_5= RULE_ID ) ) otherlv_6= '.' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';' )
             {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:545:1: (otherlv_0= 'binds' ( (otherlv_1= RULE_ID ) ) otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'to' ( (otherlv_5= RULE_ID ) ) otherlv_6= '.' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';' )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:545:3: otherlv_0= 'binds' ( (otherlv_1= RULE_ID ) ) otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'to' ( (otherlv_5= RULE_ID ) ) otherlv_6= '.' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';'
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:549:1: (otherlv_0= 'binds' ( (otherlv_1= RULE_ID ) ) otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'to' ( (otherlv_5= RULE_ID ) ) otherlv_6= '.' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';' )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:549:3: otherlv_0= 'binds' ( (otherlv_1= RULE_ID ) ) otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'to' ( (otherlv_5= RULE_ID ) ) otherlv_6= '.' ( (otherlv_7= RULE_ID ) ) otherlv_8= ';'
             {
-            otherlv_0=(Token)match(input,21,FOLLOW_21_in_ruleBinding1245); 
+            otherlv_0=(Token)match(input,21,FOLLOW_21_in_ruleBinding1251); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getBindingAccess().getBindsKeyword_0());
                 
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:549:1: ( (otherlv_1= RULE_ID ) )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:550:1: (otherlv_1= RULE_ID )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:553:1: ( (otherlv_1= RULE_ID ) )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:554:1: (otherlv_1= RULE_ID )
             {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:550:1: (otherlv_1= RULE_ID )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:551:3: otherlv_1= RULE_ID
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:554:1: (otherlv_1= RULE_ID )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:555:3: otherlv_1= RULE_ID
             {
 
             			if (current==null) {
             	            current = createModelElement(grammarAccess.getBindingRule());
             	        }
                     
-            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleBinding1265); 
+            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleBinding1271); 
 
             		newLeafNode(otherlv_1, grammarAccess.getBindingAccess().getSourceComponentComponentCrossReference_1_0()); 
             	
@@ -1307,22 +1319,22 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,22,FOLLOW_22_in_ruleBinding1277); 
+            otherlv_2=(Token)match(input,22,FOLLOW_22_in_ruleBinding1283); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getBindingAccess().getFullStopKeyword_2());
                 
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:566:1: ( (otherlv_3= RULE_ID ) )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:567:1: (otherlv_3= RULE_ID )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:570:1: ( (otherlv_3= RULE_ID ) )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:571:1: (otherlv_3= RULE_ID )
             {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:567:1: (otherlv_3= RULE_ID )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:568:3: otherlv_3= RULE_ID
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:571:1: (otherlv_3= RULE_ID )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:572:3: otherlv_3= RULE_ID
             {
 
             			if (current==null) {
             	            current = createModelElement(grammarAccess.getBindingRule());
             	        }
                     
-            otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleBinding1297); 
+            otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleBinding1303); 
 
             		newLeafNode(otherlv_3, grammarAccess.getBindingAccess().getSourceInterfaceRequiredInterfaceCrossReference_3_0()); 
             	
@@ -1332,22 +1344,22 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,23,FOLLOW_23_in_ruleBinding1309); 
+            otherlv_4=(Token)match(input,23,FOLLOW_23_in_ruleBinding1315); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getBindingAccess().getToKeyword_4());
                 
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:583:1: ( (otherlv_5= RULE_ID ) )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:584:1: (otherlv_5= RULE_ID )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:587:1: ( (otherlv_5= RULE_ID ) )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:588:1: (otherlv_5= RULE_ID )
             {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:584:1: (otherlv_5= RULE_ID )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:585:3: otherlv_5= RULE_ID
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:588:1: (otherlv_5= RULE_ID )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:589:3: otherlv_5= RULE_ID
             {
 
             			if (current==null) {
             	            current = createModelElement(grammarAccess.getBindingRule());
             	        }
                     
-            otherlv_5=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleBinding1329); 
+            otherlv_5=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleBinding1335); 
 
             		newLeafNode(otherlv_5, grammarAccess.getBindingAccess().getTargetComponentComponentCrossReference_5_0()); 
             	
@@ -1357,22 +1369,22 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_6=(Token)match(input,22,FOLLOW_22_in_ruleBinding1341); 
+            otherlv_6=(Token)match(input,22,FOLLOW_22_in_ruleBinding1347); 
 
                 	newLeafNode(otherlv_6, grammarAccess.getBindingAccess().getFullStopKeyword_6());
                 
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:600:1: ( (otherlv_7= RULE_ID ) )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:601:1: (otherlv_7= RULE_ID )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:604:1: ( (otherlv_7= RULE_ID ) )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:605:1: (otherlv_7= RULE_ID )
             {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:601:1: (otherlv_7= RULE_ID )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:602:3: otherlv_7= RULE_ID
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:605:1: (otherlv_7= RULE_ID )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:606:3: otherlv_7= RULE_ID
             {
 
             			if (current==null) {
             	            current = createModelElement(grammarAccess.getBindingRule());
             	        }
                     
-            otherlv_7=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleBinding1361); 
+            otherlv_7=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleBinding1367); 
 
             		newLeafNode(otherlv_7, grammarAccess.getBindingAccess().getTargetInterfaceProvidedInterfaceCrossReference_7_0()); 
             	
@@ -1382,7 +1394,7 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_8=(Token)match(input,12,FOLLOW_12_in_ruleBinding1373); 
+            otherlv_8=(Token)match(input,12,FOLLOW_12_in_ruleBinding1379); 
 
                 	newLeafNode(otherlv_8, grammarAccess.getBindingAccess().getSemicolonKeyword_8());
                 
@@ -1407,7 +1419,7 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleQualifiedName"
-    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:625:1: entryRuleQualifiedName returns [String current=null] : iv_ruleQualifiedName= ruleQualifiedName EOF ;
+    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:629:1: entryRuleQualifiedName returns [String current=null] : iv_ruleQualifiedName= ruleQualifiedName EOF ;
     public final String entryRuleQualifiedName() throws RecognitionException {
         String current = null;
 
@@ -1415,17 +1427,17 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:626:2: (iv_ruleQualifiedName= ruleQualifiedName EOF )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:627:2: iv_ruleQualifiedName= ruleQualifiedName EOF
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:630:2: (iv_ruleQualifiedName= ruleQualifiedName EOF )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:631:2: iv_ruleQualifiedName= ruleQualifiedName EOF
             {
              newCompositeNode(grammarAccess.getQualifiedNameRule()); 
-            pushFollow(FOLLOW_ruleQualifiedName_in_entryRuleQualifiedName1410);
+            pushFollow(FOLLOW_ruleQualifiedName_in_entryRuleQualifiedName1416);
             iv_ruleQualifiedName=ruleQualifiedName();
 
             state._fsp--;
 
              current =iv_ruleQualifiedName.getText(); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleQualifiedName1421); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleQualifiedName1427); 
 
             }
 
@@ -1443,7 +1455,7 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleQualifiedName"
-    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:634:1: ruleQualifiedName returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* ) ;
+    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:638:1: ruleQualifiedName returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* ) ;
     public final AntlrDatatypeRuleToken ruleQualifiedName() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -1454,20 +1466,20 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:637:28: ( (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* ) )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:638:1: (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:641:28: ( (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* ) )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:642:1: (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* )
             {
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:638:1: (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* )
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:638:6: this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )*
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:642:1: (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* )
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:642:6: this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )*
             {
-            this_ID_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleQualifiedName1461); 
+            this_ID_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleQualifiedName1467); 
 
             		current.merge(this_ID_0);
                 
              
                 newLeafNode(this_ID_0, grammarAccess.getQualifiedNameAccess().getIDTerminalRuleCall_0()); 
                 
-            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:645:1: (kw= '.' this_ID_2= RULE_ID )*
+            // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:649:1: (kw= '.' this_ID_2= RULE_ID )*
             loop5:
             do {
                 int alt5=2;
@@ -1480,14 +1492,14 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
 
                 switch (alt5) {
             	case 1 :
-            	    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:646:2: kw= '.' this_ID_2= RULE_ID
+            	    // ../example.components.simple/src-gen/example/components/simple/parser/antlr/internal/InternalSimplifiedADL.g:650:2: kw= '.' this_ID_2= RULE_ID
             	    {
-            	    kw=(Token)match(input,22,FOLLOW_22_in_ruleQualifiedName1480); 
+            	    kw=(Token)match(input,22,FOLLOW_22_in_ruleQualifiedName1486); 
 
             	            current.merge(kw);
             	            newLeafNode(kw, grammarAccess.getQualifiedNameAccess().getFullStopKeyword_1_0()); 
             	        
-            	    this_ID_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleQualifiedName1495); 
+            	    this_ID_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleQualifiedName1501); 
 
             	    		current.merge(this_ID_2);
             	        
@@ -1556,39 +1568,39 @@ public class InternalSimplifiedADLParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_ruleRequiredInterface_in_entryRuleRequiredInterface748 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleRequiredInterface758 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_17_in_ruleRequiredInterface795 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleRequiredInterface815 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleRequiredInterface827 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleRequiredInterface844 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_12_in_ruleRequiredInterface861 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleProvidedInterface_in_entryRuleProvidedInterface897 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleProvidedInterface907 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_ruleProvidedInterface944 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleProvidedInterface964 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleProvidedInterface976 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleProvidedInterface993 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_12_in_ruleProvidedInterface1010 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleComponent_in_entryRuleComponent1046 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleComponent1056 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_ruleComponent1093 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_ruleComponent1116 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleComponent1128 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleComponent1145 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_12_in_ruleComponent1162 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleBinding_in_entryRuleBinding1198 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleBinding1208 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_ruleBinding1245 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleBinding1265 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_22_in_ruleBinding1277 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleBinding1297 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_23_in_ruleBinding1309 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleBinding1329 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_22_in_ruleBinding1341 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleBinding1361 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_12_in_ruleBinding1373 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_entryRuleQualifiedName1410 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleQualifiedName1421 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleQualifiedName1461 = new BitSet(new long[]{0x0000000000400002L});
-    public static final BitSet FOLLOW_22_in_ruleQualifiedName1480 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleQualifiedName1495 = new BitSet(new long[]{0x0000000000400002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_ruleRequiredInterface818 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleRequiredInterface830 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleRequiredInterface847 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_12_in_ruleRequiredInterface864 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleProvidedInterface_in_entryRuleProvidedInterface900 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleProvidedInterface910 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_ruleProvidedInterface947 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_ruleProvidedInterface970 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleProvidedInterface982 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleProvidedInterface999 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_12_in_ruleProvidedInterface1016 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleComponent_in_entryRuleComponent1052 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleComponent1062 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_ruleComponent1099 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_ruleComponent1122 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleComponent1134 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleComponent1151 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_12_in_ruleComponent1168 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleBinding_in_entryRuleBinding1204 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleBinding1214 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_ruleBinding1251 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleBinding1271 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_22_in_ruleBinding1283 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleBinding1303 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_23_in_ruleBinding1315 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleBinding1335 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_22_in_ruleBinding1347 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleBinding1367 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_12_in_ruleBinding1379 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_entryRuleQualifiedName1416 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleQualifiedName1427 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleQualifiedName1467 = new BitSet(new long[]{0x0000000000400002L});
+    public static final BitSet FOLLOW_22_in_ruleQualifiedName1486 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleQualifiedName1501 = new BitSet(new long[]{0x0000000000400002L});
 
 }

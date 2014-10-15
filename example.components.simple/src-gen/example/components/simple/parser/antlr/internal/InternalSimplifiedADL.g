@@ -359,10 +359,12 @@ ruleRequiredInterface returns [EObject current=null]
 	            $current = createModelElement(grammarAccess.getRequiredInterfaceRule());
 	        }
         }
-	otherlv_1=RULE_ID
-	{
-		newLeafNode(otherlv_1, grammarAccess.getRequiredInterfaceAccess().getTypeInterfaceDefinitionCrossReference_1_0()); 
-	}
+		{ 
+	        newCompositeNode(grammarAccess.getRequiredInterfaceAccess().getTypeInterfaceDefinitionCrossReference_1_0()); 
+	    }
+		ruleQualifiedName		{ 
+	        afterParserOrEnumRuleCall();
+	    }
 
 )
 )	otherlv_2='as' 
@@ -423,10 +425,12 @@ ruleProvidedInterface returns [EObject current=null]
 	            $current = createModelElement(grammarAccess.getProvidedInterfaceRule());
 	        }
         }
-	otherlv_1=RULE_ID
-	{
-		newLeafNode(otherlv_1, grammarAccess.getProvidedInterfaceAccess().getTypeInterfaceDefinitionCrossReference_1_0()); 
-	}
+		{ 
+	        newCompositeNode(grammarAccess.getProvidedInterfaceAccess().getTypeInterfaceDefinitionCrossReference_1_0()); 
+	    }
+		ruleQualifiedName		{ 
+	        afterParserOrEnumRuleCall();
+	    }
 
 )
 )	otherlv_2='as' 
